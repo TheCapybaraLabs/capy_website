@@ -1,6 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
+export const metadata = {
+  title: 'Termos de Serviço',
+  description: 'Termos e condições de uso dos serviços da Capybara Labs. Leia nossos termos antes de utilizar nossas soluções.',
+  keywords: ['termos de serviço', 'condições de uso', 'contrato', 'termos legais'],
+};
+
 export default function TermsPage() {
   return (
     <>

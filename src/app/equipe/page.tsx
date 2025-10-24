@@ -3,6 +3,12 @@ import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { Award, Mail, Linkedin } from 'lucide-react';
 
+export const metadata = {
+  title: 'Equipe',
+  description: 'Conheça nossa equipe multidisciplinar e altamente eficiente. Especialistas em IA, desenvolvimento e inovação tecnológica.',
+  keywords: ['equipe', 'IA', 'desenvolvimento', 'inovação'],
+};
+
 export default function TeamPage() {
   return (
     <>

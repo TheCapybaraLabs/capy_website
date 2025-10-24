@@ -4,6 +4,12 @@ import { Separator } from '@/components/ui/separator';
 import { Shield, Lock, Database, Eye, UserCheck, AlertCircle } from 'lucide-react';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Política de Privacidade - Chat IA Corporativo',
+  description: 'Política de privacidade específica da Plataforma de Chat com Inteligência Artificial White-Label. LGPD compliance garantida.',
+  keywords: ['privacidade', 'chat IA', 'LGPD', 'white-label', 'dados pessoais', 'soberania de dados'],
+};
+
 export default function PrivacidadeChatIA() {
   return (
     <div className="min-h-screen py-12">

@@ -4,6 +4,12 @@ import { Separator } from '@/components/ui/separator';
 import { Shield, FileText, Scale } from 'lucide-react';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Termos de Serviço - Chat IA Corporativo',
+  description: 'Termos e condições específicos da Plataforma de Chat com Inteligência Artificial White-Label da Capybara Labs.',
+  keywords: ['termos de serviço', 'chat IA', 'white-label', 'LGPD', 'soberania de dados', 'segurança'],
+};
+
 export default function TermosChatIA() {
   return (
     <div className="min-h-screen py-12">

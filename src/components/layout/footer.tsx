@@ -1,5 +1,5 @@
 import { Separator } from '@/components/ui/separator';
-import { CONTACT_EMAIL } from '@/constants/config';
+import { CONTACT_EMAIL, LOGO_IMAGE_PATH } from '@/constants/config';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <Image src="/capybara-labs.png" alt="Capybara Labs" width={32} height={32} className="rounded-full" />
+              <Image src={LOGO_IMAGE_PATH} alt="Capybara Labs" width={32} height={32} className="rounded-full" />
               <span className="text-lg font-bold">Capybara Labs</span>
             </div>
             <p className="text-sm text-muted-foreground">

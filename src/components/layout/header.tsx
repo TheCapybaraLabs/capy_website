@@ -5,7 +5,7 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/s
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
-import { CONTACT_EMAIL } from '@/constants/config';
+import { CONTACT_EMAIL, LOGO_IMAGE_PATH } from '@/constants/config';
 import { ModeToggle } from '@/components/mode-toggle';
 import { useState } from 'react';
 
@@ -16,7 +16,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-3">
-            <Image src="/capybara-labs.png" alt="Capybara Labs" width={40} height={40} className="rounded-full" />
+            <Image src={LOGO_IMAGE_PATH} alt="Capybara Labs" width={40} height={40} className="rounded-full" />
             <span className="text-xl font-bold">Capybara Labs</span>
           </Link>
         </div>

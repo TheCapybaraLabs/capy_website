@@ -3,7 +3,7 @@ import { Badge } from '@/components/ui/badge';
 import { Sparkles, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { CONTACT_EMAIL } from '@/constants/config';
+import { CONTACT_EMAIL, LOGO_IMAGE_PATH } from '@/constants/config';
 
 export function HeroSection() {
   return (
@@ -11,14 +11,7 @@ export function HeroSection() {
       <div className="grid md:grid-cols-2 gap-12 items-center w-full">
         {/* Left side - Logo */}
         <div className="flex justify-center md:justify-end">
-          <Image
-            src="/capybara-labs.png"
-            alt="Capybara Labs"
-            width={400}
-            height={400}
-            className="rounded-full shadow-2xl"
-            priority
-          />
+          <Image src={LOGO_IMAGE_PATH} alt="Capybara Labs" width={400} height={400} className="rounded-full" priority />
         </div>
 
         {/* Right side - Content */}

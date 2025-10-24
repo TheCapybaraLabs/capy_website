@@ -19,6 +19,12 @@ import {
 } from 'lucide-react';
 import { CONTACT_EMAIL } from '@/constants/config';
 
+export const metadata = {
+  title: 'Soluções',
+  description: 'Três pilares de excelência: Consultoria em IA, Desenvolvimento Sob Medida e Plataformas SaaS. Transforme sua organização com soluções inovadoras.',
+  keywords: ['consultoria IA', 'desenvolvimento sob medida', 'plataformas SaaS', 'chat IA corporativo', 'white-label'],
+};
+
 export default function SolucoesPage() {
   return (
     <div className="min-h-screen">
