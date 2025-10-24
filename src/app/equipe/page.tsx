@@ -131,7 +131,7 @@ export default function TeamPage() {
             </div>
 
             {/* Join Us */}
-            <div className="text-center space-y-6">
+            {/* <div className="text-center space-y-6">
               <h2 className="text-3xl font-bold">Faça Parte do Time</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Estamos sempre em busca de talentos excepcionais que compartilhem nossa paixão por tecnologia e
@@ -150,7 +150,7 @@ export default function TeamPage() {
                   </Card>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
