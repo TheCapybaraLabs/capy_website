@@ -35,23 +35,23 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://capybaralabs.com.br'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://capybaralabs.com.br',
+    url: '/',
     title: 'Capybara Labs - Transformando Organizações com IA',
     description:
       'Consultoria especializada em Inteligência Artificial, desenvolvimento de soluções sob medida e plataformas SaaS corporativas.',
     siteName: 'Capybara Labs',
     images: [
       {
-        url: '/cl-cover.png',
-        width: 1326,
-        height: 828,
+        url: '/cover.png',
+        width: 1700,
+        height: 800,
         alt: 'Capybara Labs - Transformando Organizações com IA',
       },
     ]
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: 'Capybara Labs - Transformando Organizações com IA',
     description:
       'Consultoria especializada em Inteligência Artificial, desenvolvimento de soluções sob medida e plataformas SaaS corporativas.',
-    images: ['/cl-cover.png'],
+    images: ['/cover.png'],
   },
   robots: {
     index: true,
