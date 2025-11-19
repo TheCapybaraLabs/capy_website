@@ -1,10 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Separator } from '@/components/ui/separator';
 
 export const metadata = {
   title: 'Política de Privacidade',
-  description: 'Política de privacidade da Capybara Labs. Saiba como tratamos seus dados pessoais e garantimos sua proteção.',
+  description:
+    'Política de privacidade da Capybara Labs. Saiba como tratamos seus dados pessoais e garantimos sua proteção.',
   keywords: ['privacidade', 'LGPD', 'dados pessoais', 'proteção de dados', 'política de privacidade'],
 };
 

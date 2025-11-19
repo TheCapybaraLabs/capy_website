@@ -3,8 +3,9 @@ import { Badge } from '@/components/ui/badge';
 
 export const metadata = {
   title: 'Termos de Serviço',
-  description: 'Termos e condições de uso dos serviços da Capybara Labs. Leia nossos termos antes de utilizar nossas soluções.',
-  keywords: ['termos de serviço', 'condições de uso', 'contrato', 'termos legais'],
+  description:
+    'Termos e condições de uso dos serviços da Capybara Labs. Leia nossos termos antes de utilizar nossas soluções.',
+  keywords: ['termos de serviço', 'condições de uso', 'contrato', 'termos legais', 'GPT Labs'],
 };
 
 export default function TermsPage() {
@@ -46,7 +47,7 @@ export default function TermsPage() {
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Consultoria e capacitação técnica em Inteligência Artificial</li>
                   <li>Desenvolvimento de soluções de software sob medida</li>
-                  <li>Plataformas SaaS corporativas, incluindo Chat IA white-label</li>
+                  <li>Plataformas SaaS corporativas, incluindo GPT Labs white-label</li>
                   <li>Treinamentos especializados em tecnologia e IA</li>
                 </ul>
               </CardContent>
@@ -93,7 +94,7 @@ export default function TermsPage() {
                   clientes durante a prestação de serviços.
                 </p>
                 <p>
-                  Para nossa plataforma de Chat IA corporativo, garantimos que nenhum dado do cliente será utilizado
+                  Para nossa plataforma de GPT Labs corporativo, garantimos que nenhum dado do cliente será utilizado
                   para treinamento de modelos de IA externos.
                 </p>
               </CardContent>
@@ -109,8 +110,8 @@ export default function TermsPage() {
                   resultantes do uso ou impossibilidade de uso de nossos serviços.
                 </p>
                 <p>
-                  Nossos serviços são fornecidos "como estão" e fazemos todos os esforços razoáveis para garantir sua
-                  qualidade e disponibilidade.
+                  Nossos serviços são fornecidos &quot;como estão&quot; e fazemos todos os esforços razoáveis para
+                  garantir sua qualidade e disponibilidade.
                 </p>
               </CardContent>
             </Card>

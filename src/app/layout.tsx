@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
     'consultoria em IA',
     'desenvolvimento de software',
     'SaaS',
-    'chat IA corporativo',
+    'GPT Labs corporativo',
     'LGPD',
     'white-label',
     'transformação digital',
@@ -54,7 +56,7 @@ export const metadata: Metadata = {
         height: 800,
         alt: 'Capybara Labs - Transformando Organizações com IA',
       },
-    ]
+    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -79,6 +81,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <Header />
             {children}
             <Footer />
+            <Analytics />
+            <SpeedInsights />
           </ThemeProvider>
         </body>
       </html>

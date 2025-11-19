@@ -11,7 +11,7 @@ export function FeaturedProductSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <Badge>Produto Destaque</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold">Plataforma de Chat IA Corporativo</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">Plataforma de GPT Labs Corporativo</h2>
             <p className="text-lg text-muted-foreground">
               Solução avançada de IA generativa para uso corporativo, com foco absoluto em segurança, confidencialidade
               e soberania dos dados.

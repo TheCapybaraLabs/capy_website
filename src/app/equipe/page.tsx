@@ -5,7 +5,8 @@ import { Award, Mail, Linkedin } from 'lucide-react';
 
 export const metadata = {
   title: 'Equipe',
-  description: 'Conheça nossa equipe multidisciplinar e altamente eficiente. Especialistas em IA, desenvolvimento e inovação tecnológica.',
+  description:
+    'Conheça nossa equipe multidisciplinar e altamente eficiente. Especialistas em IA, desenvolvimento e inovação tecnológica.',
   keywords: ['equipe', 'IA', 'desenvolvimento', 'inovação'],
 };
 

@@ -79,7 +79,7 @@ export function ServicesSection() {
             <CardContent className="space-y-3">
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <p className="text-sm">Chat IA corporativo white-label</p>
+                <p className="text-sm">GPT Labs white-label</p>
               </div>
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />

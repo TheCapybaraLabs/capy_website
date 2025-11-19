@@ -21,8 +21,9 @@ import { CONTACT_EMAIL } from '@/constants/config';
 
 export const metadata = {
   title: 'Soluções',
-  description: 'Três pilares de excelência: Consultoria em IA, Desenvolvimento Sob Medida e Plataformas SaaS. Transforme sua organização com soluções inovadoras.',
-  keywords: ['consultoria IA', 'desenvolvimento sob medida', 'plataformas SaaS', 'chat IA corporativo', 'white-label'],
+  description:
+    'Três pilares de excelência: Consultoria em IA, Desenvolvimento Sob Medida e Plataformas SaaS. Transforme sua organização com soluções inovadoras.',
+  keywords: ['consultoria IA', 'desenvolvimento sob medida', 'plataformas SaaS', 'GPT Labs', 'white-label'],
 };
 
 export default function SolucoesPage() {
@@ -235,7 +236,7 @@ export default function SolucoesPage() {
               <Badge variant="secondary" className="w-fit mb-2">
                 Produto Destaque
               </Badge>
-              <CardTitle className="text-2xl">Plataforma de Chat IA Corporativo (White-Label)</CardTitle>
+              <CardTitle className="text-2xl">Plataforma de GPT Labs (White-Label)</CardTitle>
               <CardDescription>
                 Solução avançada com foco absoluto em segurança, confidencialidade e soberania dos dados
               </CardDescription>
