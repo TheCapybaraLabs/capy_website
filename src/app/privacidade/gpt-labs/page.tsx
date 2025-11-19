@@ -26,7 +26,7 @@ export default function PrivacidadeChatIA() {
               Política de privacidade específica para a Plataforma de Chat com Inteligência Artificial White-Label da
               Capybara Labs.
             </p>
-            <p className="text-sm text-muted-foreground">Última atualização: 24 de outubro de 2025</p>
+            <p className="text-sm text-muted-foreground">Última atualização: 19 de Novembro de 2025</p>
           </div>
 
           <Separator />
