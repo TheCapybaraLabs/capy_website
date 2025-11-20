@@ -34,21 +34,10 @@ export function ModeToggle() {
   }
 
   return (
-    <Button
-      variant="ghost"
-      size="icon"
-      onClick={handleThemeToggle}
-      aria-label="Toggle theme"
-    >
-      {theme === 'light' && (
-        <Sun className="h-[1.2rem] w-[1.2rem] transition-all" />
-      )}
-      {theme === 'dark' && (
-        <Moon className="h-[1.2rem] w-[1.2rem] transition-all" />
-      )}
-      {theme === 'system' && (
-        <Monitor className="h-[1.2rem] w-[1.2rem] transition-all" />
-      )}
+    <Button variant="ghost" size="icon" onClick={handleThemeToggle} aria-label="Toggle theme">
+      {theme === 'light' && <Sun className="h-[1.2rem] w-[1.2rem] transition-all" />}
+      {theme === 'dark' && <Moon className="h-[1.2rem] w-[1.2rem] transition-all" />}
+      {theme === 'system' && <Monitor className="h-[1.2rem] w-[1.2rem] transition-all" />}
       <span className="sr-only">Theme: {theme}</span>
     </Button>
   );

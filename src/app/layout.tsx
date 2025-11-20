@@ -4,6 +4,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+import { DataConsentModal } from '@/components/data-consent-modal';
 import './globals.css';
 
 interface RootLayoutProps {
@@ -81,6 +82,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <Header />
             {children}
             <Footer />
+            <DataConsentModal />
             <Analytics />
             <SpeedInsights />
           </ThemeProvider>
