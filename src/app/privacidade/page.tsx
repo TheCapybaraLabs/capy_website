@@ -119,7 +119,7 @@ export default function PrivacyPage() {
                 <p>
                   Para exercer seus direitos ou esclarecer dúvidas sobre esta Política de Privacidade, entre em contato:
                 </p>
-                <p className="font-semibold text-foreground">E-mail: labs@capybaralabs.com.br</p>
+                <p className="font-semibold text-foreground">E-mail: contato@capybaralabs.com.br</p>
               </CardContent>
             </Card>
           </div>

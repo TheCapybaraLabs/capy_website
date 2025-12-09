@@ -278,7 +278,7 @@ export default function TermosChatIA() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground">
-                Para questões relacionadas a estes Termos de Serviço, acesse labs@capybaralabs.com.br
+                Para questões relacionadas a estes Termos de Serviço, acesse contato@capybaralabs.com.br
               </p>
             </CardContent>
           </Card>

@@ -47,7 +47,7 @@ export default function TeamPage() {
                         <CardDescription className="text-base mt-1">Responsável Técnico & Fundador</CardDescription>
                         <div className="flex gap-2 mt-3">
                           <a
-                            href="mailto:fabricio@capybaralabs.com.br"
+                            href="mailto:fabricio+contato@capybaralabs.com.br"
                             className="text-muted-foreground hover:text-primary transition-colors"
                           >
                             <Mail className="w-5 h-5" />

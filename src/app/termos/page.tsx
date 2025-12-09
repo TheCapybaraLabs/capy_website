@@ -146,7 +146,7 @@ export default function TermsPage() {
               </CardHeader>
               <CardContent className="space-y-4 text-muted-foreground">
                 <p>Para questões sobre estes Termos de Serviço, entre em contato:</p>
-                <p className="font-semibold text-foreground">E-mail: labs@capybaralabs.com.br</p>
+                <p className="font-semibold text-foreground">E-mail: contato@capybaralabs.com.br</p>
               </CardContent>
             </Card>
           </div>
