@@ -8,6 +8,8 @@ export const metadata = {
   description:
     'Política de privacidade específica para a Plataforma de Chat com Inteligência Artificial White-Label da Capybara Labs.',
   keywords: ['privacidade', 'GPT Labs', 'LGPD', 'white-label', 'dados pessoais', 'soberania de dados'],
+  // Prevent search engines from indexing this page while allowing link following
+  robots: { index: false, follow: true },
 };
 
 export default function PrivacidadeChatIA() {

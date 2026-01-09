@@ -8,6 +8,7 @@ export const metadata = {
   description:
     'Termos e condições específicos da Plataforma de Chat com Inteligência Artificial White-Label da Capybara Labs.',
   keywords: ['termos de serviço', 'GPT Labs', 'white-label', 'LGPD', 'soberania de dados', 'segurança'],
+  robots: { index: false, follow: true },
 };
 
 export default function TermosChatIA() {

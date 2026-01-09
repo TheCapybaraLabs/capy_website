@@ -6,6 +6,7 @@ export const metadata = {
   description:
     'Política de privacidade da Capybara Labs. Saiba como tratamos seus dados pessoais e garantimos sua proteção.',
   keywords: ['privacidade', 'LGPD', 'dados pessoais', 'proteção de dados', 'política de privacidade'],
+  robots: { index: false, follow: true },
 };
 
 export default function PrivacyPage() {

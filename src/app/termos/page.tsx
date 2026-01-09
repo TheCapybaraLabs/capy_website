@@ -6,6 +6,7 @@ export const metadata = {
   description:
     'Termos e condições de uso dos serviços da Capybara Labs. Leia nossos termos antes de utilizar nossas soluções.',
   keywords: ['termos de serviço', 'condições de uso', 'contrato', 'termos legais', 'GPT Labs'],
+  robots: { index: false, follow: true },
 };
 
 export default function TermsPage() {
