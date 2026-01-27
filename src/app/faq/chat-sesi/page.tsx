@@ -3,6 +3,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { HelpCircle } from 'lucide-react';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'FAQ | Chat IA SESI-PI',
@@ -30,7 +31,7 @@ const faqItems = [
     answer: (
       <ul className="space-y-2 text-muted-foreground list-disc list-inside">
         <li>Web: pelo navegador, no endereço fornecido pela sua organização.</li>
-        <li>Dispositivos móveis: acesso pelo navegador do celular, quando disponível.</li>
+        <li>Dispositivos móveis: acesso pelo navegador do celular ou Web App, quando disponível.</li>
       </ul>
     ),
   },
@@ -42,6 +43,25 @@ const faqItems = [
         Abra o Chat IA SESI-PI, digite o que você precisa na caixa de mensagem e envie. Selecione &quot;Novo chat&quot;
         a qualquer momento para começar do zero.
       </p>
+    ),
+  },
+  {
+    value: 'como-selecionar-modelo',
+    question: 'Como seleciono o modelo de IA?',
+    answer: (
+      <div>
+        <p className="text-muted-foreground">
+          Segue o tutorial rápido para escolher o modelo ideal para sua conversa:{' '}
+        </p>
+        <Image
+          src="/faq-choose-model-SESI.gif"
+          alt="Tutorial de seleção de modelo"
+          width={800}
+          height={400}
+          className="rounded-sm mt-6"
+          unoptimized
+        />
+      </div>
     ),
   },
   {
@@ -63,8 +83,10 @@ const faqItems = [
     question: 'O Chat IA SESI-PI consegue pesquisar na web?',
     answer: (
       <p className="text-muted-foreground">
-        Se a pesquisa na web estiver habilitada, o Chat IA SESI-PI pode buscar informações atuais e indicar referências.
-        Procure o ícone de pesquisa ou o atalho exibido na interface (por exemplo, &quot;/search&quot;).
+        Sim. Os modelos disponíveis podem acessar informações atualizadas por meio de pesquisas na internet, permitindo
+        a consulta a conteúdos recentes, dados públicos e fontes confiáveis. Ao formular sua pergunta no chat, informe
+        se deseja que a resposta inclua pesquisa externa e referências, para que o sistema realize a busca e apresente
+        as fontes utilizadas.
       </p>
     ),
   },
@@ -72,11 +94,14 @@ const faqItems = [
     value: 'chat-temporario',
     question: 'O que é o chat temporário?',
     answer: (
-      <p className="text-muted-foreground">
-        Quando disponível, chats temporários não aparecem no histórico, não usam/criam memórias e, como todos os demais
-        chats, não são usados para treinar modelos. Inicie um chat temporário no menu de modelos quando quiser mais
-        privacidade para uma conversa específica.
-      </p>
+      <div>
+        <p className="text-muted-foreground">
+          Chats temporários não aparecem no histórico, não usam/criam memórias e não são usados para treinar modelos.
+          Quando quiser mais privacidade para uma conversa específica, inicie um chat temporário no ícone localizado no
+          canto superior direito da tela inicial.
+        </p>
+        <Image src="/chat-temp.png" alt="" width={180} height={90} className="rounded-sm mt-6" />
+      </div>
     ),
   },
   {
@@ -126,7 +151,8 @@ const faqItems = [
     answer: (
       <p className="text-muted-foreground">
         Sim, quando disponível. Use &quot;Compartilhar&quot; para criar um link para uma cópia somente leitura e envie
-        para outras pessoas, respeitando as políticas internas. Os links podem ser gerenciados em Controles de dados.
+        para outras pessoas, respeitando as políticas internas. Os links podem ser gerenciados em{' '}
+        <strong>Configurações → Controles de dados → Links compartilhados → Gerenciar</strong>.
       </p>
     ),
   },
