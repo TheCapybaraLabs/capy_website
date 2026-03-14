@@ -14,12 +14,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata = {
-  title: "Termos de Serviço - GPT Labs Corporativo",
+  title: "Termos de Serviço - LabsChat Corporativo",
   description:
     "Termos e condições específicos da Plataforma de Chat com Inteligência Artificial White-Label da Capybara Labs.",
   keywords: [
     "termos de serviço",
-    "GPT Labs",
+    "LabsChat",
     "white-label",
     "LGPD",
     "soberania de dados",
@@ -37,10 +37,10 @@ export default function TermosChatIA() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Badge variant="secondary">Plataforma SaaS</Badge>
-              <Badge variant="outline">GPT Labs Corporativo</Badge>
+              <Badge variant="outline">LabsChat Corporativo</Badge>
             </div>
             <h1 className="font-bold text-4xl tracking-tight">
-              Termos de Serviço - GPT Labs Corporativo
+              Termos de Serviço - LabsChat Corporativo
             </h1>
             <p className="text-lg text-muted-foreground">
               Termos e condições específicos da Plataforma de Chat com Inteligência Artificial

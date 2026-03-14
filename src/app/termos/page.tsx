@@ -5,7 +5,7 @@ export const metadata = {
   title: "Termos de Serviço",
   description:
     "Termos e condições de uso dos serviços da Capybara Labs. Leia nossos termos antes de utilizar nossas soluções.",
-  keywords: ["termos de serviço", "condições de uso", "contrato", "termos legais", "GPT Labs"],
+  keywords: ["termos de serviço", "condições de uso", "contrato", "termos legais", "LabsChat"],
   robots: { index: false, follow: true },
 };
 
@@ -51,7 +51,7 @@ export default function TermsPage() {
                 <ul className="list-disc space-y-2 pl-6">
                   <li>Consultoria e capacitação técnica em Inteligência Artificial</li>
                   <li>Desenvolvimento de soluções de software sob medida</li>
-                  <li>Plataformas SaaS corporativas, incluindo GPT Labs white-label</li>
+                  <li>Plataformas SaaS corporativas, incluindo LabsChat white-label</li>
                   <li>Treinamentos especializados em tecnologia e IA</li>
                 </ul>
               </CardContent>
@@ -98,7 +98,7 @@ export default function TermsPage() {
                   fornecidas pelos clientes durante a prestação de serviços.
                 </p>
                 <p>
-                  Para nossa plataforma de GPT Labs corporativo, garantimos que nenhum dado do
+                  Para nossa plataforma de LabsChat corporativo, garantimos que nenhum dado do
                   cliente será utilizado para treinamento de modelos de IA externos.
                 </p>
               </CardContent>

@@ -4,12 +4,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata = {
-  title: "Política de Privacidade - GPT Labs Corporativo",
+  title: "Política de Privacidade - LabsChat Corporativo",
   description:
     "Política de privacidade específica para a Plataforma de Chat com Inteligência Artificial White-Label da Capybara Labs.",
   keywords: [
     "privacidade",
-    "GPT Labs",
+    "LabsChat",
     "LGPD",
     "white-label",
     "dados pessoais",
@@ -28,10 +28,10 @@ export default function PrivacidadeChatIA() {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Badge variant="secondary">Plataforma SaaS</Badge>
-              <Badge variant="outline">GPT Labs Corporativo</Badge>
+              <Badge variant="outline">LabsChat Corporativo</Badge>
             </div>
             <h1 className="font-bold text-4xl tracking-tight">
-              Política de Privacidade - GPT Labs Corporativo
+              Política de Privacidade - LabsChat Corporativo
             </h1>
             <p className="text-lg text-muted-foreground">
               Política de privacidade específica para a Plataforma de Chat com Inteligência

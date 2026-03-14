@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "consultoria em IA",
     "desenvolvimento de software",
     "SaaS",
-    "GPT Labs corporativo",
+    "LabsChat corporativo",
     "LGPD",
     "white-label",
     "transformação digital",

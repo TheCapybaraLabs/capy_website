@@ -27,7 +27,7 @@ export const metadata = {
     "consultoria IA",
     "desenvolvimento sob medida",
     "plataformas SaaS",
-    "GPT Labs",
+    "LabsChat",
     "white-label",
   ],
 };
@@ -254,7 +254,7 @@ export default function SolucoesPage() {
               <Badge variant="secondary" className="mb-2 w-fit">
                 Produto Destaque
               </Badge>
-              <CardTitle className="text-2xl">Plataforma de GPT Labs (White-Label)</CardTitle>
+              <CardTitle className="text-2xl">Plataforma de LabsChat (White-Label)</CardTitle>
               <CardDescription>
                 Solução avançada com foco absoluto em segurança, confidencialidade e soberania dos
                 dados
