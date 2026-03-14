@@ -38,9 +38,6 @@ export function Header() {
           <Link href="/#sobre" className="font-medium text-sm transition-colors hover:text-primary">
             Sobre
           </Link>
-          <Link href="/equipe" className="font-medium text-sm transition-colors hover:text-primary">
-            Equipe
-          </Link>
           <Link
             href="/#diferenciais"
             className="font-medium text-sm transition-colors hover:text-primary"
@@ -79,13 +76,6 @@ export function Header() {
                   onClick={() => setOpen(false)}
                 >
                   Sobre
-                </Link>
-                <Link
-                  href="/equipe"
-                  className="py-2 font-medium text-base transition-colors hover:text-primary"
-                  onClick={() => setOpen(false)}
-                >
-                  Equipe
                 </Link>
                 <Link
                   href="/#diferenciais"
