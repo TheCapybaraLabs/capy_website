@@ -12,15 +12,13 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import type { ClientConfig } from "@/data/clients";
 
-export const metadata = {
-  title: "Termos de Uso da Plataforma Chat IA SENAI-PI",
-  description: "Termos de Uso da Plataforma Chat IA SENAI-PI.",
-  keywords: ["termos de uso", "SENAI-PI", "Plataforma Chat IA", "Capybara Labs"],
-  robots: { index: false, follow: true },
+type Props = {
+  client: ClientConfig;
 };
 
-export default function TermosChatIA() {
+export function TermosTemplate({ client }: Props) {
   return (
     <div className="min-h-screen py-12">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -28,14 +26,14 @@ export default function TermosChatIA() {
           {/* Header */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Badge variant="secondary">Plataforma Chat IA</Badge>
-              <Badge variant="outline">SENAI-PI</Badge>
+              <Badge variant="secondary">Plataforma {client.productName}</Badge>
+              <Badge variant="outline">{client.shortName}</Badge>
             </div>
             <h1 className="font-bold text-4xl tracking-tight">
-              Termos de Uso da Plataforma Chat IA SENAI-PI
+              Termos de Uso da Plataforma {client.name}
             </h1>
             <p className="text-muted-foreground text-sm">
-              Última atualização: 01 de dezembro de 2025.
+              Última atualização: {client.lastUpdatedLegal}.
             </p>
           </div>
 
@@ -52,18 +50,17 @@ export default function TermosChatIA() {
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">Bem-vindo(a) à Plataforma da Capybara Labs.</p>
               <p className="text-muted-foreground">
-                Estes Termos de Uso (&quot;Termos&quot;) constituem um acordo legal vinculante entre
-                o usuário final (&quot;Usuário&quot;), na qualidade de funcionário (incluindo todos
-                os tipos de vínculos) ou representante autorizado do{" "}
+                Estes Termos de Uso ("Termos") constituem um acordo legal vinculante entre o usuário
+                final ("Usuário"), na qualidade de funcionário (incluindo todos os tipos de
+                vínculos) ou representante autorizado do{" "}
                 <strong>
-                  Serviço Nacional de Aprendizagem Industrial - Departamento Regional do Piauí
-                  (SENAI-PI)
+                  {client.fullName} ({client.shortName})
                 </strong>{" "}
-                (&quot;Empresa Cliente&quot;), e a Capybara Labs.
+                ("Empresa Cliente"), e a Capybara Labs.
               </p>
               <p className="text-muted-foreground">
                 Estes Termos regem o acesso e a utilização da plataforma de software como serviço de
-                Inteligência Artificial da Capybara Labs (&quot;Plataforma&quot;).
+                Inteligência Artificial da Capybara Labs ("Plataforma").
               </p>
               <p className="text-muted-foreground">
                 AO ACESSAR, CADASTRAR-SE OU UTILIZAR A PLATAFORMA, O USUÁRIO DECLARA QUE LEU,
@@ -201,10 +198,10 @@ export default function TermosChatIA() {
               </p>
               <p className="text-muted-foreground">
                 <strong>5.2. Conteúdo do Usuário:</strong> A Empresa Cliente retém todos os direitos
-                sobre o conteúdo que o Usuário insere na Plataforma (&quot;Conteúdo do
-                Usuário&quot;). O Usuário concede à Capybara Labs uma licença mundial, isenta de
-                royalties e sublicenciável para usar tal conteúdo com o único propósito de operar e
-                fornecer os serviços da Plataforma.
+                sobre o conteúdo que o Usuário insere na Plataforma ("Conteúdo do Usuário"). O
+                Usuário concede à Capybara Labs uma licença mundial, isenta de royalties e
+                sublicenciável para usar tal conteúdo com o único propósito de operar e fornecer os
+                serviços da Plataforma.
               </p>
               <p className="text-muted-foreground">
                 <strong>
@@ -214,10 +211,10 @@ export default function TermosChatIA() {
               </p>
               <ul className="ml-6 list-inside list-disc space-y-2 text-muted-foreground">
                 <li>
-                  Natureza do Conteúdo: O Usuário reconhece que o conteúdo gerado pela IA
-                  (&quot;Conteúdo de IA&quot;) é produzido automaticamente e pode conter
-                  imprecisões, erros ou material tendencioso. A Capybara Labs não oferece garantias
-                  quanto à precisão ou confiabilidade do Conteúdo de IA.
+                  Natureza do Conteúdo: O Usuário reconhece que o conteúdo gerado pela IA ("Conteúdo
+                  de IA") é produzido automaticamente e pode conter imprecisões, erros ou material
+                  tendencioso. A Capybara Labs não oferece garantias quanto à precisão ou
+                  confiabilidade do Conteúdo de IA.
                 </li>
                 <li>
                   ISENÇÃO DE ACONSELHAMENTO PROFISSIONAL: O CONTEÚDO DE IA GERADO PELA PLATAFORMA
@@ -247,8 +244,8 @@ export default function TermosChatIA() {
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
                 <strong>6.1.</strong> O Usuário reconhece que a Plataforma pode conter ou utilizar
-                softwares de código aberto (&quot;Open Source Software&quot;) ou outros componentes
-                de software de terceiros, que são regidos por suas próprias licenças.
+                softwares de código aberto ("Open Source Software") ou outros componentes de
+                software de terceiros, que são regidos por suas próprias licenças.
               </p>
               <p className="text-muted-foreground">
                 <strong>6.2.</strong> A Plataforma utiliza, entre outros, componentes do projeto
@@ -257,10 +254,9 @@ export default function TermosChatIA() {
               </p>
               <p className="text-muted-foreground">
                 <strong>6.3.</strong> NA MÁXIMA EXTENSÃO PERMITIDA PELA LEI, QUALQUER SOFTWARE DE
-                TERCEIROS É FORNECIDO &quot;NO ESTADO EM QUE SE ENCONTRA&quot;, SEM QUALQUER
-                GARANTIA, SEJA EXPRESSA OU IMPLÍCITA, POR PARTE DA CAPYBARA LABS. A Capybara Labs se
-                isenta de qualquer responsabilidade por danos decorrentes do uso de tais
-                componentes.
+                TERCEIROS É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA", SEM QUALQUER GARANTIA, SEJA
+                EXPRESSA OU IMPLÍCITA, POR PARTE DA CAPYBARA LABS. A Capybara Labs se isenta de
+                qualquer responsabilidade por danos decorrentes do uso de tais componentes.
               </p>
             </CardContent>
           </Card>
@@ -296,11 +292,11 @@ export default function TermosChatIA() {
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
-                A PLATAFORMA É FORNECIDA &quot;NO ESTADO EM QUE SE ENCONTRA&quot; E &quot;CONFORME
-                DISPONÍVEL&quot;, SEM GARANTIAS DE QUALQUER TIPO, EXPRESSAS OU IMPLÍCITAS. A
-                CAPYBARA LABS NÃO GARANTE QUE A PLATAFORMA SERÁ ININTERRUPTA, LIVRE DE ERROS, VÍRUS
-                OU COMPONENTES NOCIVOS, OU QUE ATENDERÁ ÀS NECESSIDADES ESPECÍFICAS DO USUÁRIO. O
-                USO DA PLATAFORMA É DE INTEIRA RESPONSABILIDADE E RISCO DO USUÁRIO.
+                A PLATAFORMA É FORNECIDA "NO ESTADO EM QUE SE ENCONTRA" E "CONFORME DISPONÍVEL", SEM
+                GARANTIAS DE QUALQUER TIPO, EXPRESSAS OU IMPLÍCITAS. A CAPYBARA LABS NÃO GARANTE QUE
+                A PLATAFORMA SERÁ ININTERRUPTA, LIVRE DE ERROS, VÍRUS OU COMPONENTES NOCIVOS, OU QUE
+                ATENDERÁ ÀS NECESSIDADES ESPECÍFICAS DO USUÁRIO. O USO DA PLATAFORMA É DE INTEIRA
+                RESPONSABILIDADE E RISCO DO USUÁRIO.
               </p>
             </CardContent>
           </Card>

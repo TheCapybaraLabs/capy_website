@@ -161,8 +161,8 @@ export default function PrivacidadeChatIA() {
                   </h4>
                   <p className="text-muted-foreground text-sm">
                     Para geração de respostas. (Nota: Estes provedores são configurados via API
-                    &quot;Zero Retention&quot; ou políticas Enterprise onde aplicável, para evitar
-                    treinamento em dados do cliente).
+                    "Zero Retention" ou políticas Enterprise onde aplicável, para evitar treinamento
+                    em dados do cliente).
                   </p>
                 </div>
 

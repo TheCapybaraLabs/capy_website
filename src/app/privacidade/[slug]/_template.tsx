@@ -12,16 +12,13 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import type { ClientConfig } from "@/data/clients";
 
-export const metadata = {
-  title: "Política de Privacidade da Plataforma Chat IA SESI-PI",
-  description: "Política de Privacidade da Plataforma Chat IA SESI-PI.",
-  keywords: ["privacidade", "SESI-PI", "Chat IA", "LGPD", "Capybara Labs"],
-  // Prevent search engines from indexing this page while allowing link following
-  robots: { index: false, follow: true },
+type Props = {
+  client: ClientConfig;
 };
 
-export default function PrivacidadeChatIA() {
+export function PrivacidadeTemplate({ client }: Props) {
   return (
     <div className="min-h-screen py-12">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -29,14 +26,14 @@ export default function PrivacidadeChatIA() {
           {/* Header */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Badge variant="secondary">Plataforma Chat IA</Badge>
-              <Badge variant="outline">SESI-PI</Badge>
+              <Badge variant="secondary">Plataforma {client.productName}</Badge>
+              <Badge variant="outline">{client.shortName}</Badge>
             </div>
             <h1 className="font-bold text-4xl tracking-tight">
-              <strong>Política de Privacidade da Plataforma Chat IA SESI-PI</strong>
+              <strong>Política de Privacidade da Plataforma {client.name}</strong>
             </h1>
             <p className="text-muted-foreground text-sm">
-              Última atualização: 01 de dezembro de 2025.
+              Última atualização: {client.lastUpdatedLegal}.
             </p>
           </div>
 
@@ -54,25 +51,26 @@ export default function PrivacidadeChatIA() {
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
-                Esta Política de Privacidade (&quot;Política&quot;) é emitida pela da Capybara Labs
-                Inova Simples (I.S) (&quot;<strong>Capybara Labs</strong>&quot;), inscrita no CNPJ
-                sob o número 55.585.433/0001-48, com sede na Avenida Marechal Castelo Branco, 911
-                Torre 02, Sala 920, Teresina - PI.
+                Esta Política de Privacidade ("Política") é emitida pela da Capybara Labs Inova
+                Simples (I.S) ("<strong>Capybara Labs</strong>"), inscrita no CNPJ sob o número
+                55.585.433/0001-48, com sede na Avenida Marechal Castelo Branco, 911 Torre 02, Sala
+                920, Teresina - PI.
               </p>
               <p className="text-muted-foreground">
                 Este documento foi elaborado para fornecer transparência e explicar como a Capybara
-                Labs <strong>(“Operadora” ou "Licenciante”)</strong> trata as informações e dados
-                pessoais dos usuários finais (&quot;<strong>Usuário</strong>&quot;) que utilizam a
-                plataforma de software como serviço &quot;Chat IA SESI-PI&quot; (&quot;
-                <strong>Plataforma</strong>&quot;) da Capybara Labs, licenciada para a empresa na
-                qual o Usuário trabalha ou a qual representa (&quot;
-                <strong>Serviço Social da Indústria – Departamento Regional do Piauí” </strong>ou
-                <strong> “SESI-PI</strong>&quot; ou{" "}
-                <strong>&quot;Empresa Cliente&quot; ou “Licenciada”</strong>).
+                Labs <strong>("Operadora" ou "Licenciante")</strong> trata as informações e dados
+                pessoais dos usuários finais ("<strong>Usuário</strong>") que utilizam a plataforma
+                de software como serviço "{client.name}" ("
+                <strong>Plataforma</strong>") da Capybara Labs, licenciada para a empresa na qual o
+                Usuário trabalha ou a qual representa ("
+                <strong>{client.fullName} </strong>
+                ou
+                <strong> "{client.shortName}</strong>" ou{" "}
+                <strong>"Empresa Cliente" ou "Licenciada"</strong>).
               </p>
               <p className="text-muted-foreground">
-                Esta Política se aplica exclusivamente à Plataforma &quot;Chat IA SESI-PI&quot; e a
-                todos os serviços associados fornecidos pela LICENCIANTE À LICENCIADA, conforme{" "}
+                Esta Política se aplica exclusivamente à Plataforma "{client.name}" e a todos os
+                serviços associados fornecidos pela LICENCIANTE À LICENCIADA, conforme{" "}
                 <strong>
                   Termo de Serviço, Licenciamento de Software como Serviço (SaaS) e Suporte{" "}
                 </strong>
@@ -83,8 +81,8 @@ export default function PrivacidadeChatIA() {
               </p>
               <p className="text-muted-foreground">
                 Ao acessar e utilizar a Plataforma, o Usuário reconhece que leu, compreendeu e
-                concorda com os termos aqui descritos, bem como com os Termos de Uso da Plataforma
-                Chat IA SESI-PI e Termo de Serviço, Licenciamento de Software como Serviço (SaaS) e
+                concorda com os termos aqui descritos, bem como com os Termos de Uso da Plataforma{" "}
+                {client.name} e Termo de Serviço, Licenciamento de Software como Serviço (SaaS) e
                 Suporte. Caso o usuário não concorde com esta Política, deverá abster-se de utilizar
                 a Plataforma e notificar imediatamente a LICENCIADA.
               </p>
@@ -167,7 +165,7 @@ export default function PrivacidadeChatIA() {
                 dados pessoais:
               </p>
               <p className="text-muted-foreground">
-                O <strong>SESI-PI</strong> (empregadora do Usuário) é a Controladora:
+                O <strong>{client.shortName}</strong> (empregadora do Usuário) é a Controladora:
               </p>
               <p className="text-muted-foreground">
                 A LICENCIADA é exclusivamente responsável pelas decisões referentes ao tratamento
@@ -211,12 +209,12 @@ export default function PrivacidadeChatIA() {
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
-                <strong>4.1.</strong> Delegação de Controle e Monitoramento: A LICENCIADA (SESI-PI),
-                na qualidade de Controladora exclusiva e empregadora dos Usuários Finais, detém o
-                direito pleno e irrestrito de acessar, monitorar, revisar, reter e analisar todos e
-                quaisquer Dados Pessoais e Conteúdo das Interações gerados por seus usuários na
-                Plataforma, a qualquer momento e sem a necessidade de notificação prévia ou
-                consentimento específico do usuário individual.
+                <strong>4.1.</strong> Delegação de Controle e Monitoramento: A LICENCIADA (
+                {client.shortName}), na qualidade de Controladora exclusiva e empregadora dos
+                Usuários Finais, detém o direito pleno e irrestrito de acessar, monitorar, revisar,
+                reter e analisar todos e quaisquer Dados Pessoais e Conteúdo das Interações gerados
+                por seus usuários na Plataforma, a qualquer momento e sem a necessidade de
+                notificação prévia ou consentimento específico do usuário individual.
               </p>
               <p className="text-muted-foreground">
                 <strong>4.2.</strong> Finalidades Institucionais: O acesso e uso dos dados dos
@@ -337,9 +335,7 @@ export default function PrivacidadeChatIA() {
                   <strong>6.1. </strong>Prestação e Melhoria dos Serviços:
                 </p>
                 <ul className="ml-6 list-inside list-disc space-y-2 text-muted-foreground">
-                  <li>
-                    Fornecer, operar, manter e otimizar a Plataforma &quot;Chat IA SESI-PI&quot;;
-                  </li>
+                  <li>Fornecer, operar, manter e otimizar a Plataforma "{client.name}";</li>
                   <li>Autenticar usuários e gerenciar acessos;</li>
                   <li>Processar as interações com os modelos de IA e entregar respostas;</li>
                   <li>Oferecer suporte técnico e responder a solicitações;</li>
@@ -405,7 +401,7 @@ export default function PrivacidadeChatIA() {
                 execução do acordo (conforme o Art. 7º, V, da LGPD), formalizado entre a{" "}
                 <strong>Capybara Labs</strong> e o{" "}
                 <strong>
-                  Serviço Social da Indústria (SESI - PI) – Departamento Regional do Piauí
+                  {client.fullName} ({client.shortName})
                 </strong>{" "}
                 através do{" "}
                 <strong>
@@ -439,9 +435,9 @@ export default function PrivacidadeChatIA() {
                 links para suas respectivas políticas de privacidade, cuja leitura é recomendada:
               </p>
               <ul className="ml-6 list-inside list-disc space-y-2 text-muted-foreground">
-                <li>OpenAI (Modelos GPT): https://openai.com/pt-BR/policies/privacy-policy/</li>
-                <li>Google (Modelos Gemini): / https://policies.google.com/privacy</li>
-                <li>Anthropic (Modelos Claude):</li>
+                <li>OpenAI (Modelos GPT): https://openai.com/pt-BR/policies/privacy-policy</li>
+                <li>Google (Modelos Gemini): https://ai.google.dev/gemini-api/terms</li>
+                <li>Anthropic (Modelos Claude): https://www.anthropic.com/legal/privacy</li>
               </ul>
               <p className="text-muted-foreground">
                 <strong>8.1.1. Flexibilidade de Provedores:</strong> A{" "}
@@ -501,9 +497,9 @@ export default function PrivacidadeChatIA() {
               <p className="text-muted-foreground">
                 <strong>9.3.</strong> Canal Exclusivo com a Controladora: O exercício de todos os
                 direitos previstos na LGPD pelos usuários finais deve ser dirigido exclusivamente à
-                LICENCIADA (SESI-PI), através dos canais por ela definidos. A LICENCIANTE não terá
-                qualquer obrigação de atender diretamente a solicitações de usuários finais e
-                somente procederá com alterações, blocos ou exclusões de dados mediante instrução
+                LICENCIADA ({client.shortName}), através dos canais por ela definidos. A LICENCIANTE
+                não terá qualquer obrigação de atender diretamente a solicitações de usuários finais
+                e somente procederá com alterações, blocos ou exclusões de dados mediante instrução
                 formal e escrita da LICENCIADA.
               </p>
               <p className="text-muted-foreground">
@@ -514,8 +510,8 @@ export default function PrivacidadeChatIA() {
               </p>
               <p className="text-muted-foreground">
                 Em caso de incidente de segurança, a Capybara Labs comunicará ao{" "}
-                <strong>SESI-PI</strong> e à Autoridade Nacional de Proteção de Dados (ANPD),
-                conforme exigido pela LGPD.
+                <strong>{client.shortName}</strong> e à Autoridade Nacional de Proteção de Dados
+                (ANPD), conforme exigido pela LGPD.
               </p>
             </CardContent>
           </Card>

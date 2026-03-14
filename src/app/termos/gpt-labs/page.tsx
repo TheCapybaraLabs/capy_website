@@ -242,9 +242,9 @@ export default function TermosChatIA() {
                   <h4 className="mb-2 font-semibold">6.1. Conteúdo Gerado por IA</h4>
                   <p className="text-muted-foreground">
                     A Plataforma é uma ferramenta de meio. A Capybara Labs não garante a precisão
-                    factual das respostas geradas pela Inteligência Artificial
-                    (&quot;alucinações&quot;) e não se responsabiliza por decisões de negócio,
-                    códigos ou documentos produzidos com base nessas respostas.
+                    factual das respostas geradas pela Inteligência Artificial ("alucinações") e não
+                    se responsabiliza por decisões de negócio, códigos ou documentos produzidos com
+                    base nessas respostas.
                   </p>
                 </div>
 

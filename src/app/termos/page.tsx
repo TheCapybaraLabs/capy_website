@@ -114,8 +114,8 @@ export default function TermsPage() {
                   ou consequenciais resultantes do uso ou impossibilidade de uso de nossos serviços.
                 </p>
                 <p>
-                  Nossos serviços são fornecidos &quot;como estão&quot; e fazemos todos os esforços
-                  razoáveis para garantir sua qualidade e disponibilidade.
+                  Nossos serviços são fornecidos "como estão" e fazemos todos os esforços razoáveis
+                  para garantir sua qualidade e disponibilidade.
                 </p>
               </CardContent>
             </Card>
