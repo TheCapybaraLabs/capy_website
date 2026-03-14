@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import * as React from 'react';
-import { Moon, Monitor, Sun } from 'lucide-react';
-import { useTheme } from 'next-themes';
+import { Monitor, Moon, Sun } from "lucide-react";
+import { useTheme } from "next-themes";
+import * as React from "react";
 
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
@@ -15,12 +15,12 @@ export function ModeToggle() {
   }, []);
 
   const handleThemeToggle = () => {
-    if (theme === 'system') {
-      setTheme('light');
-    } else if (theme === 'light') {
-      setTheme('dark');
+    if (theme === "system") {
+      setTheme("light");
+    } else if (theme === "light") {
+      setTheme("dark");
     } else {
-      setTheme('system');
+      setTheme("system");
     }
   };
 
@@ -35,9 +35,9 @@ export function ModeToggle() {
 
   return (
     <Button variant="ghost" size="icon" onClick={handleThemeToggle} aria-label="Toggle theme">
-      {theme === 'light' && <Sun className="h-[1.2rem] w-[1.2rem] transition-all" />}
-      {theme === 'dark' && <Moon className="h-[1.2rem] w-[1.2rem] transition-all" />}
-      {theme === 'system' && <Monitor className="h-[1.2rem] w-[1.2rem] transition-all" />}
+      {theme === "light" && <Sun className="h-[1.2rem] w-[1.2rem] transition-all" />}
+      {theme === "dark" && <Moon className="h-[1.2rem] w-[1.2rem] transition-all" />}
+      {theme === "system" && <Monitor className="h-[1.2rem] w-[1.2rem] transition-all" />}
       <span className="sr-only">Theme: {theme}</span>
     </Button>
   );
