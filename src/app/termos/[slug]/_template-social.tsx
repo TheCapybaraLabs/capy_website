@@ -60,8 +60,7 @@ export function TermosTemplateSocial({ client }: Props) {
                 <strong>Instituição Parceira</strong>"), no âmbito do{" "}
                 <strong>Contrato de Parceria</strong> celebrado entre as partes, para suportar o
                 programa social gratuito de formação de Jovens Aprendizes promovido pela{" "}
-                {client.shortName}. A Capybara Labs atua exclusivamente como fornecedora de
-                tecnologia e não é parte do referido programa social.
+                {client.shortName}.
               </p>
               <p className="text-muted-foreground">
                 Estes Termos de Uso ("Termos") regem a relação entre a Capybara Labs e o{" "}
