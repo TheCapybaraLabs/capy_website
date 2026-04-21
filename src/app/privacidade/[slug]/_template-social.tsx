@@ -70,8 +70,7 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
               </p>
               <p className="text-muted-foreground">
                 Os Usuários são <strong>Jovens Aprendizes</strong> inscritos pela Instituição
-                Parceira no programa social gratuito, com acesso à Plataforma{" "}
-                <strong>limitado a 1.500 (mil e quinhentos) Usuários</strong>.{" "}
+                Parceira no programa social gratuito.{" "}
                 <strong>
                   Não existe vínculo empregatício, de estágio ou de aprendizagem entre o Usuário e a
                   Capybara Labs.
@@ -93,10 +92,14 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
                 Marco Civil da Internet (Lei nº 12.965/2014).
               </p>
               <p className="text-muted-foreground">
-                Considerando que a maioria dos Usuários é menor de idade, o uso da Plataforma
-                depende de <strong>consentimento específico e em destaque</strong> de pelo menos um
-                dos Responsáveis Legais, nos termos do <strong>art. 14, §1º, da LGPD</strong>,
-                obtido pela Instituição Parceira no ato de cadastramento do Usuário no programa.
+                Parte dos Usuários é menor de idade (adolescentes de 14 a 17 anos), sendo a maioria
+                composta por Usuários maiores de idade. Para os Usuários{" "}
+                <strong>menores de idade</strong>, o uso da Plataforma depende de{" "}
+                <strong>consentimento específico e em destaque</strong> de pelo menos um dos
+                Responsáveis Legais, nos termos do <strong>art. 14, §1º, da LGPD</strong>. Para os
+                Usuários <strong>maiores de idade</strong>, aplica-se o consentimento próprio (art.
+                7º, I, da LGPD). Em ambos os casos, o consentimento é obtido pela Instituição
+                Parceira no ato de cadastramento do Usuário no programa.
               </p>
             </CardContent>
           </Card>
@@ -131,8 +134,8 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
                   LGPD.
                 </li>
                 <li>
-                  <strong>Usuário:</strong> o adolescente ou jovem participante do programa social
-                  gratuito da Instituição Parceira, devidamente cadastrado na Plataforma.
+                  <strong>Usuário:</strong> o participante do programa social gratuito da
+                  Instituição Parceira, devidamente cadastrado na Plataforma.
                 </li>
                 <li>
                   <strong>Responsável Legal:</strong> pai, mãe, tutor ou outro representante legal

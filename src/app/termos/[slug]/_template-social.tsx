@@ -60,17 +60,15 @@ export function TermosTemplateSocial({ client }: Props) {
                 <strong>Instituição Parceira</strong>"), no âmbito do{" "}
                 <strong>Contrato de Parceria</strong> celebrado entre as partes, para suportar o
                 programa social gratuito de formação de Jovens Aprendizes promovido pela{" "}
-                {client.shortName}, limitado a <strong>1.500 (mil e quinhentos) Usuários</strong>. A
-                Capybara Labs atua exclusivamente como fornecedora de tecnologia e não é parte do
-                referido programa social.
+                {client.shortName}. A Capybara Labs atua exclusivamente como fornecedora de
+                tecnologia e não é parte do referido programa social.
               </p>
               <p className="text-muted-foreground">
                 Estes Termos de Uso ("Termos") regem a relação entre a Capybara Labs e o{" "}
                 <strong>usuário final</strong> ("Usuário"), na condição de{" "}
-                <strong>adolescente ou jovem participante</strong> do programa da {client.shortName}
-                , no que diz respeito ao uso da Plataforma. Obrigações específicas entre o Usuário e
-                a {client.shortName} decorrentes do programa são regidas pelos instrumentos próprios
-                firmados entre eles.
+                <strong>participante</strong> do programa da {client.shortName}, no que diz respeito
+                ao uso da Plataforma. Obrigações específicas entre o Usuário e a {client.shortName}{" "}
+                decorrentes do programa são regidas pelos instrumentos próprios firmados entre eles.
               </p>
               <p className="text-muted-foreground">
                 <strong>1.1. Ausência de vínculo com a Capybara Labs.</strong> A utilização da
@@ -80,19 +78,24 @@ export function TermosTemplateSocial({ client }: Props) {
                 parte deste instrumento nem recebem dados da Plataforma.
               </p>
               <p className="text-muted-foreground">
-                <strong>1.2. Consentimento do Responsável Legal.</strong> Considerando que os
-                Usuários são, em regra, <strong>menores de idade</strong>, o acesso à Plataforma
-                depende do consentimento específico e em destaque de pelo menos um dos pais ou
-                responsáveis legais ("Responsável Legal"), obtido pela {client.shortName} no ato de
-                inscrição do Usuário no programa, conforme o art. 14 da Lei nº 13.709/2018 (Lei
-                Geral de Proteção de Dados - LGPD), o Estatuto da Criança e do Adolescente (ECA -
-                Lei nº 8.069/1990) e as normas aplicáveis à proteção de crianças e adolescentes em
-                ambientes digitais (ECA Digital).
+                <strong>1.2. Consentimento.</strong> Parte dos Usuários é menor de idade
+                (adolescentes de 14 a 17 anos); a maioria é maior de idade. O acesso à Plataforma
+                depende: (i) para os Usuários <strong>menores de idade</strong>, do consentimento
+                específico e em destaque de pelo menos um dos pais ou responsáveis legais ( "
+                <strong>Responsável Legal</strong>"), nos termos do art. 14 da Lei nº 13.709/2018
+                (Lei Geral de Proteção de Dados - LGPD); (ii) para os Usuários{" "}
+                <strong>maiores de idade</strong>, do consentimento próprio do Usuário (art. 7º, I,
+                da LGPD). Em ambos os casos, o consentimento é obtido pela {client.shortName} no ato
+                de inscrição do Usuário no programa. Quanto aos Usuários menores de idade,
+                observam-se ainda o Estatuto da Criança e do Adolescente (ECA - Lei nº 8.069/1990) e
+                as normas aplicáveis à proteção de crianças e adolescentes em ambientes digitais
+                (ECA Digital).
               </p>
               <p className="text-muted-foreground">
-                AO ACESSAR, CADASTRAR-SE OU UTILIZAR A PLATAFORMA, O USUÁRIO E SEU RESPONSÁVEL LEGAL
-                DECLARAM QUE LERAM, COMPREENDERAM E CONCORDAM INTEGRALMENTE COM ESTES TERMOS DE USO
-                E COM A POLÍTICA DE PRIVACIDADE DA PLATAFORMA.
+                AO ACESSAR, CADASTRAR-SE OU UTILIZAR A PLATAFORMA, O USUÁRIO — E, QUANDO MENOR DE
+                IDADE, TAMBÉM O SEU RESPONSÁVEL LEGAL — DECLARAM QUE LERAM, COMPREENDERAM E
+                CONCORDAM INTEGRALMENTE COM ESTES TERMOS DE USO E COM A POLÍTICA DE PRIVACIDADE DA
+                PLATAFORMA.
               </p>
             </CardContent>
           </Card>
@@ -107,10 +110,10 @@ export function TermosTemplateSocial({ client }: Props) {
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
-                <strong>2.1. Elegibilidade.</strong> O uso da Plataforma é restrito aos adolescentes
-                e jovens inscritos no programa da {client.shortName}, conforme critérios de
-                elegibilidade por ela definidos (incluindo idade mínima, participação ativa no
-                programa e consentimento vigente do Responsável Legal).
+                <strong>2.1. Elegibilidade.</strong> O uso da Plataforma é restrito aos Usuários
+                inscritos no programa da {client.shortName}, conforme critérios de elegibilidade por
+                ela definidos (incluindo idade mínima, participação ativa no programa e, para
+                menores de idade, consentimento vigente do Responsável Legal).
               </p>
               <p className="text-muted-foreground">
                 <strong>2.2. Gratuidade.</strong> O acesso à Plataforma é integralmente gratuito ao
