@@ -1,7 +1,8 @@
+import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Política de Privacidade",
   description:
     "Política de privacidade da Capybara Labs. Saiba como tratamos seus dados pessoais e garantimos sua proteção.",

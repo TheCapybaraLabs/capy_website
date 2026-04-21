@@ -13,13 +13,14 @@ import {
   Users,
   Zap,
 } from "lucide-react";
+import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { CONTACT_EMAIL } from "@/constants/config";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Soluções",
   description:
     "Três pilares de excelência: Consultoria em IA, Desenvolvimento Sob Medida e Plataformas SaaS. Transforme sua organização com soluções inovadoras.",
