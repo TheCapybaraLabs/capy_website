@@ -245,11 +245,12 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
                   qualquer finalidade alheia ao programa.
                 </li>
                 <li>
-                  <strong>4.3. Não-treinamento pela Capybara Labs.</strong> A Capybara Labs{" "}
-                  <strong>não utiliza</strong> os Dados Pessoais nem o Conteúdo das Interações dos
-                  Usuários para treinar ou aprimorar modelos de Inteligência Artificial próprios.
-                  Sobre o papel dos provedores de IA contratados na operação gratuita desta
-                  Plataforma, consulte a Seção 9.
+                  <strong>4.3. Uso para treinamento de modelos.</strong> A Capybara Labs{" "}
+                  <strong>não treina modelos de Inteligência Artificial próprios</strong> com os
+                  Dados Pessoais nem com o Conteúdo das Interações dos Usuários. O tratamento
+                  realizado pelos provedores de IA contratados — inclusive a eventual retenção e uso
+                  de prompts para aprimoramento dos modelos desses provedores — segue as políticas
+                  de cada provedor, conforme descrito na Seção 9.1.1.
                 </li>
                 <li>
                   <strong>4.4. Não comercialização:</strong> os dados dos Usuários não são vendidos,
@@ -685,11 +686,6 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
               </div>
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
-              {/*
-                REVISAR: removi a cláusula original de "uso continuado = aceitação" porque, em contexto
-                LGPD/menores, a base legal é o consentimento do Responsável Legal (art. 14, §1º). Alterações
-                substanciais provavelmente exigem renovação de consentimento, não aceitação tácita.
-              */}
               <p className="text-muted-foreground">
                 A Capybara Labs poderá modificar esta Política para refletir mudanças legais,
                 regulatórias ou operacionais. Alterações relevantes serão comunicadas à{" "}
@@ -716,12 +712,6 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
                 Federativa do Brasil, em especial a LGPD, o ECA, a Constituição Federal e o Marco
                 Civil da Internet.
               </p>
-              {/*
-                REVISAR: foro eleito contra parte vulnerável/hipossuficiente pode ser afastado pelo juízo
-                competente (CDC art. 101, I; CPC art. 63, §3º). Redação abaixo restringe o foro eleito às
-                controvérsias entre Capybara Labs e Controladora, ressalvando competência legal para demandas
-                envolvendo Usuários menores e seus Responsáveis Legais.
-              */}
               <p className="text-muted-foreground">
                 <strong>Foro:</strong> as controvérsias entre Capybara Labs e {client.shortName}{" "}
                 decorrentes desta Política serão resolvidas no Foro da Comarca de Teresina/PI, sem

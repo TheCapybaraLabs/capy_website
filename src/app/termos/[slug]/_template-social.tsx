@@ -73,7 +73,7 @@ export function TermosTemplateSocial({ client }: Props) {
                 <strong>Consentimento.</strong> Parte dos Usuários é menor de idade (adolescentes de
                 14 a 17 anos); a maioria é maior de idade. O acesso à Plataforma depende: (i) para
                 os Usuários <strong>menores de idade</strong>, do consentimento específico e em
-                destaque de pelo menos um dos pais ou responsáveis legais ( "
+                destaque de pelo menos um dos pais ou responsáveis legais ("
                 <strong>Responsável Legal</strong>"), nos termos do art. 14 da Lei nº 13.709/2018
                 (Lei Geral de Proteção de Dados - LGPD); (ii) para os Usuários{" "}
                 <strong>maiores de idade</strong>, do consentimento próprio do Usuário (art. 7º, I,
@@ -170,10 +170,10 @@ export function TermosTemplateSocial({ client }: Props) {
                   tenham o Usuário como alvo;
                 </li>
                 <li>
-                  <strong>4.2.</strong> Vedação ao uso dos dados e interações dos Usuários, pela
-                  Capybara Labs, para treinamento ou ajuste fino de modelos de Inteligência
-                  Artificial próprios (a respeito do papel dos provedores de IA contratados na
-                  operação gratuita desta Plataforma, consulte a Política de Privacidade, Seção 9);
+                  <strong>4.2.</strong> A Capybara Labs não utiliza os dados e interações dos
+                  Usuários para treinar ou ajustar modelos de Inteligência Artificial próprios. A
+                  respeito do papel dos provedores de IA contratados na operação desta Plataforma,
+                  consulte a Política de Privacidade;
                 </li>
                 <li>
                   <strong>4.3.</strong> Possibilidade, a qualquer tempo e sem ônus, de{" "}
@@ -353,9 +353,9 @@ export function TermosTemplateSocial({ client }: Props) {
               </p>
               <p className="text-muted-foreground">
                 <strong>8.4. Uso para treinamento de IA.</strong> A Capybara Labs não utiliza o
-                conteúdo do Usuário para treinar modelos próprios. Sobre o uso de prompts pelos
-                provedores de IA contratados na operação gratuita desta Plataforma, consulte a
-                Política de Privacidade, Seção 9.
+                conteúdo do Usuário para treinar modelos próprios. Sobre o tratamento de prompts
+                pelos provedores de IA contratados na operação desta Plataforma, consulte a Política
+                de Privacidade.
               </p>
               <p className="text-muted-foreground">
                 <strong>8.5. Componentes de terceiros.</strong> A Plataforma utiliza componentes de
@@ -394,9 +394,9 @@ export function TermosTemplateSocial({ client }: Props) {
               </p>
               <p className="text-muted-foreground">
                 <strong>9.3. Disponibilidade do serviço.</strong> A Plataforma é fornecida "como
-                está" e "conforme disponível", não se garantindo ininterruptibilidade ou adequação a
-                finalidade específica não expressamente prevista no Contrato de Parceria,
-                ressalvadas as garantias legais aplicáveis.
+                está" e "conforme disponível", não se garantindo ininterruptibilidade,
+                disponibilidade contínua ou adequação a finalidade específica distinta daquela
+                educacional, ressalvadas as garantias legais aplicáveis.
               </p>
             </CardContent>
           </Card>
@@ -417,8 +417,8 @@ export function TermosTemplateSocial({ client }: Props) {
                 inclusive, quando cabível, das normas de proteção do consumidor e dos direitos da
                 criança e do adolescente, sendo <strong>vedada qualquer interpretação</strong> deste
                 instrumento que implique renúncia a direitos indisponíveis do Usuário ou do
-                Responsável Legal.
-                {/* REVISAR: a redação acima preserva direitos indisponíveis do menor e do consumidor em vez de fixar um teto numérico; confirmar se atende à estratégia comercial pretendida pela Capybara Labs. */}
+                Responsável Legal. Ficam ressalvados, em qualquer hipótese, os casos de dolo ou
+                culpa grave.
               </p>
               <p className="text-muted-foreground">
                 <strong>10.2. Decisões do Usuário.</strong> A Capybara Labs e a {client.shortName}{" "}
@@ -507,8 +507,10 @@ export function TermosTemplateSocial({ client }: Props) {
               </p>
               <p className="text-muted-foreground">
                 <strong>Foro:</strong> fica eleito o Foro da Comarca de Teresina/PI para dirimir
-                quaisquer controvérsias oriundas destes Termos, ressalvado, quando aplicável, o foro
-                de domicílio do consumidor ou do Responsável Legal.
+                quaisquer controvérsias oriundas destes Termos, ressalvadas, quando aplicáveis, as
+                hipóteses de foro do domicílio do consumidor (art. 101, I, do Código de Defesa do
+                Consumidor) e, em demandas envolvendo Usuários menores de idade, o foro previsto no
+                art. 63, § 3º, do Código de Processo Civil.
               </p>
               <p className="text-muted-foreground">
                 <strong>Integralidade:</strong> estes Termos, em conjunto com a Política de
