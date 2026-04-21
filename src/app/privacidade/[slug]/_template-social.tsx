@@ -274,15 +274,15 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
-                <strong>5.1. Modelo agregado como regra.</strong> Dada a escala do programa
-                (limitado a 1.500 Jovens Aprendizes) e a natureza social do serviço, a{" "}
-                {client.shortName}{" "}
-                <strong>
-                  não realiza revisão rotineira e individualizada do Conteúdo das Interações
-                </strong>
-                . O acompanhamento do programa é feito preferencialmente a partir de{" "}
+                <strong>5.1. Modelo agregado como regra.</strong> Os recursos de acompanhamento
+                disponibilizados à {client.shortName} pela Plataforma são baseados em{" "}
                 <strong>métricas agregadas e anonimizadas</strong> (ex.: volume de uso, distribuição
-                por faixa etária, indicadores de limitação de taxa e banimento, taxa de adesão).
+                por faixa etária, indicadores de limitação de taxa e banimento, taxa de adesão).{" "}
+                <strong>
+                  Não há, por padrão, revisão rotineira e individualizada do Conteúdo das Interações
+                  pela Capybara Labs
+                </strong>
+                .
               </p>
               <p className="text-muted-foreground">
                 <strong>5.2. Acesso individualizado como exceção.</strong> O acesso a interações de

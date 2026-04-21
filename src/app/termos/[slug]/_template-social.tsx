@@ -306,11 +306,10 @@ export function TermosTemplateSocial({ client }: Props) {
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
-                <strong>7.1. Acompanhamento agregado.</strong> Em razão da escala do programa
-                (limitado a 1.500 Usuários) e da ausência de equipe dedicada a revisar interações
-                individuais, a {client.shortName} realiza o acompanhamento pedagógico principalmente
-                por meio de <strong>métricas agregadas e anonimizadas</strong>, sem revisão
-                rotineira de conversas individuais.
+                <strong>7.1. Acompanhamento agregado.</strong> Os recursos de acompanhamento
+                disponibilizados à {client.shortName} pela Plataforma são baseados em{" "}
+                <strong>métricas agregadas e anonimizadas</strong>. Não há, por padrão, revisão
+                rotineira e individualizada do Conteúdo das Interações pela Capybara Labs.
               </p>
               <p className="text-muted-foreground">
                 <strong>7.2. Acesso individualizado como exceção.</strong> O acesso ao conteúdo das
