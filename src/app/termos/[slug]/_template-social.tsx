@@ -71,14 +71,7 @@ export function TermosTemplateSocial({ client }: Props) {
                 decorrentes do programa são regidas pelos instrumentos próprios firmados entre eles.
               </p>
               <p className="text-muted-foreground">
-                <strong>1.1. Ausência de vínculo com a Capybara Labs.</strong> A utilização da
-                Plataforma não cria vínculo empregatício, de estágio ou de aprendizagem entre o
-                Usuário e a Capybara Labs. Eventuais relações de estágio ou aprendizagem mantidas
-                pelo Usuário com terceiros são independentes destes Termos; tais terceiros não são
-                parte deste instrumento nem recebem dados da Plataforma.
-              </p>
-              <p className="text-muted-foreground">
-                <strong>1.2. Consentimento.</strong> Parte dos Usuários é menor de idade
+                <strong>1.1. Consentimento.</strong> Parte dos Usuários é menor de idade
                 (adolescentes de 14 a 17 anos); a maioria é maior de idade. O acesso à Plataforma
                 depende: (i) para os Usuários <strong>menores de idade</strong>, do consentimento
                 específico e em destaque de pelo menos um dos pais ou responsáveis legais ( "
