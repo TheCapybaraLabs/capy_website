@@ -18,7 +18,7 @@ type Props = {
   client: ClientConfig;
 };
 
-export function PrivacidadeTemplate({ client }: Props) {
+export function PrivacidadeTemplateB2B({ client }: Props) {
   return (
     <div className="min-h-screen py-12">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -52,9 +52,9 @@ export function PrivacidadeTemplate({ client }: Props) {
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
                 Esta Política de Privacidade ("Política") é emitida pela da Capybara Labs Inova
-                Simples (I.S) ("<strong>Capybara Labs</strong>"), inscrita no CNPJ sob o número
-                55.585.433/0001-48, com sede na Avenida Marechal Castelo Branco, 911 Torre 02, Sala
-                920, Teresina - PI.
+                Simples (I.S) ("
+                <strong>Capybara Labs</strong>"), inscrita no CNPJ sob o número 55.585.433/0001-48,
+                com sede na Avenida Marechal Castelo Branco, 911 Torre 02, Sala 920, Teresina - PI.
               </p>
               <p className="text-muted-foreground">
                 Este documento foi elaborado para fornecer transparência e explicar como a Capybara
@@ -221,7 +221,7 @@ export function PrivacidadeTemplate({ client }: Props) {
                 usuários pela LICENCIADA podem ser realizados para diversas finalidades
                 institucionais legítimas, incluindo, mas não se limitando a:
               </p>
-              <ul className="list-inside list-disc space-y-2 text-muted-foreground">
+              <ul className="list-none space-y-2 text-muted-foreground">
                 <li>
                   <strong>4.2.1. </strong>Assegurar o cumprimento das políticas internas de uso
                   aceitável de TI e de conduta da LICENCIADA;
@@ -531,7 +531,7 @@ export function PrivacidadeTemplate({ client }: Props) {
                 Os usuários finais, como titulares de dados, possuem os seguintes direitos sob a
                 LGPD:
               </p>
-              <ul className="list-inside list-disc space-y-2 text-muted-foreground">
+              <ul className="list-none space-y-2 text-muted-foreground">
                 <li>
                   <strong>10.1. </strong>Confirmação e Acesso: Direito de confirmar a existência de
                   tratamento e acessar seus dados.

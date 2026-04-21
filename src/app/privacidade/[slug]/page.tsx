@@ -1,6 +1,9 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { clients, getClient } from "@/data/clients";
-import { PrivacidadeTemplate } from "./_template";
+import { PrivacidadeTemplateB2B } from "./_template-b2b";
+import { PrivacidadeTemplatePublic } from "./_template-public";
+import { PrivacidadeTemplateSocial } from "./_template-social";
 
 export const dynamicParams = false;
 
@@ -8,7 +11,11 @@ export function generateStaticParams() {
   return clients.map((c) => ({ slug: c.slug }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
   const { slug } = await params;
   const client = getClient(slug);
   if (!client) return {};
@@ -24,5 +31,12 @@ export default async function PrivacidadePage({ params }: { params: Promise<{ sl
   const { slug } = await params;
   const client = getClient(slug);
   if (!client) notFound();
-  return <PrivacidadeTemplate client={client} />;
+  switch (client.legalVariant) {
+    case "public":
+      return <PrivacidadeTemplatePublic client={client} />;
+    case "social-youth":
+      return <PrivacidadeTemplateSocial client={client} />;
+    default:
+      return <PrivacidadeTemplateB2B client={client} />;
+  }
 }
