@@ -220,9 +220,11 @@ export function PrivacidadeTemplatePublic({ client }: Props) {
                 divulgação a provedores de IA terceiros não seja apropriada.
               </p>
               <p className="text-muted-foreground">
-                <strong>4.3. Dados de Moderação:</strong> resultados das análises automatizadas
-                descritas na Seção 7, incluindo categorias acionadas, pontuações e decisões
-                (bloqueio, limitação, banimento).
+                <strong>4.3. Dados de Controle de Uso:</strong> registros relativos à aplicação dos
+                controles descritos na Seção 7, compreendendo contadores de uso, decisões de
+                limitação de taxa, suspensão ou banimento por abuso, bem como eventuais denúncias
+                recebidas. Não inclui classificações automáticas de conteúdo, cuja aplicação —
+                quando ocorre — é de responsabilidade dos provedores de IA, conforme item 7.1.
               </p>
               <p className="text-muted-foreground">
                 <strong>4.4. Dados Técnicos e de Uso (Logs):</strong> tipo de dispositivo, sistema
@@ -266,7 +268,10 @@ export function PrivacidadeTemplatePublic({ client }: Props) {
                   <strong>5.2. Segurança, prevenção de fraude e integridade:</strong>
                 </p>
                 <ul className="ml-6 list-inside list-disc space-y-2 text-muted-foreground">
-                  <li>executar a moderação automatizada descrita na Seção 7 e detectar abusos;</li>
+                  <li>
+                    aplicar os controles de uso aceitável descritos na Seção 7 e detectar abusos
+                    comportamentais;
+                  </li>
                   <li>proteger a Plataforma contra acessos não autorizados e fraudes;</li>
                   <li>
                     investigar violações aos Termos de Uso e aplicar medidas cabíveis (limitação de
@@ -340,9 +345,10 @@ export function PrivacidadeTemplatePublic({ client }: Props) {
                 </li>
                 <li>
                   <strong>6.3.</strong> <strong>Legítimo interesse</strong> (art. 7º, IX, da LGPD):
-                  para segurança da Plataforma, prevenção de fraude, detecção de abusos e moderação
-                  automatizada, observado o teste de proporcionalidade entre os interesses da
-                  Capybara Labs e os direitos dos Usuários.
+                  para segurança da Plataforma, prevenção de fraude, detecção de abusos
+                  comportamentais e aplicação dos controles de uso aceitável previstos na Seção 7,
+                  observado o teste de proporcionalidade entre os interesses da Capybara Labs e os
+                  direitos dos Usuários.
                 </li>
                 <li>
                   <strong>6.4.</strong>{" "}
@@ -354,54 +360,58 @@ export function PrivacidadeTemplatePublic({ client }: Props) {
             </CardContent>
           </Card>
 
-          {/* Seção 7: Moderação Automatizada */}
+          {/* Seção 7: Salvaguardas de Segurança e Controles de Uso Aceitável */}
           <Card>
             <CardHeader>
               <div className="flex items-center gap-2">
                 <AlertTriangle className="h-5 w-5 text-primary" />
                 <CardTitle>
-                  <strong>7. Moderação automatizada</strong>
+                  <strong>
+                    7. Salvaguardas de Segurança dos Provedores de IA e Controles de Uso Aceitável
+                  </strong>
                 </CardTitle>
               </div>
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
-                Para preservar a integridade da Plataforma e proteger os Usuários, a Capybara Labs
-                aplica mecanismos automatizados de moderação, com os seguintes parâmetros:
+                Para preservar a integridade da Plataforma, a Capybara Labs combina (i) salvaguardas
+                de segurança aplicadas pelos provedores de modelos de IA contratados e (ii)
+                controles próprios de uso aceitável baseados em comportamento.
               </p>
-              <ul className="list-none space-y-2 text-muted-foreground">
-                <li>
-                  <strong>7.1. Moderação de texto via OpenAI Moderation API:</strong> cada mensagem
-                  textual enviada pelo Usuário (prompt) é previamente avaliada pela{" "}
-                  <em>OpenAI Moderation API</em> — independentemente do provedor de IA selecionado
-                  para a resposta — para identificar e bloquear conteúdos enquadrados em categorias
-                  como conteúdo sexual, autoagressão, discurso de ódio, assédio e violência.
-                </li>
-                <li>
-                  <strong>7.2. Limitação de taxa e banimento automático:</strong> Usuários que
-                  violem reiteradamente a Política de Uso Aceitável podem ter sua taxa de uso
-                  restringida e, em caso de abuso, ter a conta suspensa ou banida automaticamente.
-                </li>
-                <li>
-                  <strong>7.3. Catálogo de modelos restrito:</strong> a lista de modelos de IA
-                  disponibilizada aos Usuários é previamente definida pela Capybara Labs, sendo
-                  vedada a habilitação autônoma de modelos pelo Usuário.
-                </li>
-                <li>
-                  <strong>7.4. Limitações atuais de escopo (transparência).</strong> Na presente
-                  data, a moderação automatizada <strong>não abrange</strong> a análise de{" "}
-                  <strong>imagens enviadas pelo Usuário</strong> nem das{" "}
-                  <strong>saídas geradas pelos modelos de IA</strong>. A Capybara Labs trabalha para
-                  ampliar o escopo dos filtros e quaisquer alterações relevantes serão refletidas
-                  nesta Política.
-                </li>
-                <li>
-                  <strong>7.5. Dados gerados pela moderação.</strong> Resultados da moderação
-                  (categorias acionadas, pontuações e decisões) são registrados como metadados
-                  associados à conta e utilizados exclusivamente para as finalidades descritas nesta
-                  Política.
-                </li>
-              </ul>
+              <p className="text-muted-foreground">
+                <strong>7.1. Salvaguardas de segurança dos provedores de IA.</strong> Os modelos
+                disponibilizados na Plataforma são fornecidos por terceiros (como OpenAI, Anthropic
+                e Google — Seção 8.1), que aplicam, no âmbito de seus próprios servidores, filtros e
+                políticas de uso proprietários. Requisições enviadas aos provedores estão sujeitas a
+                tais políticas, podendo ser recusadas pelo provedor quando contrariarem suas regras
+                de segurança. A Capybara Labs <strong>não opera</strong> uma camada própria de
+                análise semântica sobre as mensagens do Usuário nem sobre as saídas geradas.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>7.2. Catálogo de modelos restrito.</strong> A Capybara Labs define
+                previamente quais modelos de IA ficam disponíveis aos Usuários. É vedada a
+                habilitação autônoma de modelos pelo Usuário.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>7.3. Controles de uso aceitável (comportamentais).</strong> A Capybara Labs
+                aplica controles automatizados baseados em <strong>volume e padrões de uso</strong>{" "}
+                — independentes do conteúdo das mensagens — incluindo limitação de taxa (
+                <em>rate limit</em>) e suspensão ou banimento automático de contas que apresentem
+                indícios de abuso da Plataforma ou de violação reiterada destes Termos de Uso. Esses
+                controles <strong>não constituem moderação de conteúdo</strong> e não envolvem
+                classificação semântica das mensagens pela Capybara Labs.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>7.4. Política de conduta.</strong> O conteúdo inserido pelo Usuário está
+                sujeito às políticas de uso dos provedores de IA e à cláusula de conduta prevista
+                nos Termos de Uso, cujo descumprimento pode ensejar as medidas previstas no item
+                7.3.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>7.5. Dados gerados pelos controles.</strong> Contadores de uso, decisões de
+                limitação, suspensão e banimento são registrados como metadados associados à conta
+                do Usuário e utilizados exclusivamente para as finalidades descritas nesta Política.
+              </p>
             </CardContent>
           </Card>
 
@@ -418,11 +428,7 @@ export function PrivacidadeTemplatePublic({ client }: Props) {
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
                 A Capybara Labs utiliza sub-operadores estritamente necessários à prestação do
-                serviço, sob obrigações contratuais de confidencialidade, segurança e{" "}
-                <strong>
-                  vedação de uso dos dados dos Usuários para treinamento de modelos de IA
-                </strong>{" "}
-                sempre que o provedor disponibilizar tal compromisso.
+                serviço, sob obrigações contratuais de confidencialidade e segurança.
               </p>
               <p className="text-muted-foreground">
                 <strong>8.1. Provedores de Modelos de Inteligência Artificial.</strong> A Plataforma
@@ -436,9 +442,10 @@ export function PrivacidadeTemplatePublic({ client }: Props) {
                 <li>Anthropic (modelos Claude): https://www.anthropic.com/legal/privacy</li>
               </ul>
               <p className="text-muted-foreground">
-                Sempre que disponíveis, a Capybara Labs contrata políticas de{" "}
-                <em>Zero Retention</em> ou equivalentes em planos <em>Enterprise</em>, reforçando a
-                vedação de uso dos dados dos Usuários para treinamento de modelos.
+                As modalidades de contratação utilizadas pela Capybara Labs com esses provedores
+                preveem, nos termos das políticas padrão de cada provedor, que os prompts e as
+                respostas gerados pelos Usuários <strong>não são utilizados</strong> pelos
+                provedores para o treinamento dos seus próprios modelos.
               </p>
               <p className="text-muted-foreground">
                 <strong>8.2. Provedores de Infraestrutura e Hospedagem.</strong> A Plataforma é
@@ -487,8 +494,8 @@ export function PrivacidadeTemplatePublic({ client }: Props) {
               <p className="text-muted-foreground">
                 <strong>9.1. Medidas de segurança.</strong> A Capybara Labs adota medidas técnicas e
                 administrativas aptas a proteger os dados pessoais (art. 46 da LGPD), incluindo
-                criptografia em trânsito (TLS) e em repouso, controle de acesso sob o princípio do
-                menor privilégio, logs de auditoria, monitoramento contínuo e políticas internas de
+                criptografia em trânsito (TLS), controle de acesso sob o princípio do menor
+                privilégio, logs de auditoria, monitoramento contínuo e políticas internas de
                 segurança da informação.
               </p>
               <p className="text-muted-foreground">
@@ -557,9 +564,10 @@ export function PrivacidadeTemplatePublic({ client }: Props) {
                 </li>
               </ul>
               <p className="text-muted-foreground">
-                <strong>10.9. Canal de atendimento.</strong> As solicitações devem ser dirigidas
-                diretamente à Capybara Labs pelo e-mail <strong>suporte@capybaralabs.com.br</strong>
-                , com resposta nos prazos do art. 19 da LGPD.
+                <strong>10.9. Canal do Encarregado.</strong> As solicitações devem ser dirigidas
+                diretamente à Capybara Labs, aos cuidados do Encarregado pelo Tratamento de Dados
+                Pessoais, pelo e-mail <strong>dpo@capybaralabs.com.br</strong>, com resposta nos
+                prazos do art. 19 da LGPD.
               </p>
             </CardContent>
           </Card>
@@ -677,8 +685,8 @@ export function PrivacidadeTemplatePublic({ client }: Props) {
               <p className="text-muted-foreground">
                 Para dúvidas sobre esta Política, para o exercício dos direitos previstos na LGPD ou
                 para qualquer outra questão relativa ao tratamento de seus dados pessoais, o Usuário
-                pode contatar a Capybara Labs pelo e-mail{" "}
-                <strong>suporte@capybaralabs.com.br</strong>.
+                pode contatar o Encarregado pelo e-mail <strong>dpo@capybaralabs.com.br</strong>.
+                Questões técnicas sobre a Plataforma: suporte@capybaralabs.com.br.
               </p>
             </CardContent>
           </Card>

@@ -60,16 +60,18 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
                 sede na Avenida Marechal Castelo Branco, 911, Torre 02, Sala 920, Teresina - PI.
               </p>
               <p className="text-muted-foreground">
-                Este documento explica como a Capybara Labs ("<strong>Operadora</strong>") trata os
-                dados pessoais dos participantes ("<strong>Usuário</strong>") do programa social
-                gratuito oferecido pela <strong>{client.fullName}</strong> ("
+                Este documento explica como a Capybara Labs ("<strong>Operadora</strong>"), na
+                qualidade de <strong>apoiadora institucional e parceira tecnológica</strong> do
+                programa, trata os dados pessoais dos participantes ("<strong>Usuário</strong>") do
+                programa social gratuito oferecido pela <strong>{client.fullName}</strong> ("
                 <strong>{client.shortName}</strong>", "<strong>Instituição Parceira</strong>" ou "
-                <strong>Controladora</strong>") e que utilizam a plataforma de software como serviço
+                <strong>Controladora</strong>"), que utilizam a plataforma de software como serviço
                 "{client.name}" ("<strong>Plataforma</strong>").
               </p>
               <p className="text-muted-foreground">
                 Os Usuários são <strong>adolescentes e jovens</strong>, em regra com idade entre 14
-                e 24 anos, inscritos no programa social gratuito da Instituição Parceira.{" "}
+                e 24 anos, inscritos no programa social gratuito da Instituição Parceira, com acesso
+                à Plataforma <strong>limitado a 1.500 (mil e quinhentos) Jovens Aprendizes</strong>.{" "}
                 <strong>
                   Não existe vínculo empregatício, de estágio ou de aprendizagem entre o Usuário e a{" "}
                   {client.shortName}, tampouco entre o Usuário e a Capybara Labs.
@@ -79,12 +81,16 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
                 obrigação legal, não recebem acesso aos dados tratados na Plataforma.
               </p>
               <p className="text-muted-foreground">
-                Esta Política aplica-se exclusivamente à Plataforma "{client.name}", fornecida pela
-                Capybara Labs à {client.shortName} por meio do <strong>Contrato de Parceria</strong>{" "}
-                celebrado entre as partes, e é instrumento de cumprimento da Lei Geral de Proteção
-                de Dados Pessoais (LGPD - Lei nº 13.709/2018), em especial do seu{" "}
-                <strong>art. 14</strong>, do Estatuto da Criança e do Adolescente (ECA - Lei nº
-                8.069/1990) e do Marco Civil da Internet (Lei nº 12.965/2014).
+                Esta Política aplica-se exclusivamente à Plataforma "{client.name}",{" "}
+                <strong>
+                  disponibilizada pela Capybara Labs à {client.shortName} sem ônus financeiro
+                </strong>
+                , por meio do <strong>Contrato de Parceria</strong> celebrado entre as partes, e é
+                instrumento de cumprimento da Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº
+                13.709/2018), em especial do seu <strong>art. 14</strong>, do Estatuto da Criança e
+                do Adolescente (ECA - Lei nº 8.069/1990), das normas aplicáveis à proteção de
+                crianças e adolescentes em ambientes digitais (<strong>ECA Digital</strong>) e do
+                Marco Civil da Internet (Lei nº 12.965/2014).
               </p>
               <p className="text-muted-foreground">
                 Considerando que a maioria dos Usuários é menor de idade, o uso da Plataforma
@@ -236,12 +242,11 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
                   qualquer finalidade alheia ao programa.
                 </li>
                 <li>
-                  <strong>4.3. Vedação absoluta ao treinamento de modelos de IA:</strong> os Dados
-                  Pessoais e o Conteúdo das Interações dos Usuários{" "}
-                  <strong>não são, em nenhuma hipótese</strong>, utilizados para treinamento, ajuste
-                  fino (fine-tuning) ou aprimoramento de modelos de Inteligência Artificial,
-                  próprios ou de terceiros. Essa vedação é contratualmente reforçada junto aos
-                  sub-operadores (Seção 9).
+                  <strong>4.3. Não-treinamento pela Capybara Labs.</strong> A Capybara Labs{" "}
+                  <strong>não utiliza</strong> os Dados Pessoais nem o Conteúdo das Interações dos
+                  Usuários para treinar ou aprimorar modelos de Inteligência Artificial próprios.
+                  Sobre o papel dos provedores de IA contratados na operação gratuita desta
+                  Plataforma, consulte a Seção 9.
                 </li>
                 <li>
                   <strong>4.4. Não comercialização:</strong> os dados dos Usuários não são vendidos,
@@ -269,14 +274,15 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
-                <strong>5.1. Modelo agregado como regra.</strong> Dada a escala do programa (com
-                mais de mil Usuários possíveis) e a natureza social do serviço, a {client.shortName}{" "}
+                <strong>5.1. Modelo agregado como regra.</strong> Dada a escala do programa
+                (limitado a 1.500 Jovens Aprendizes) e a natureza social do serviço, a{" "}
+                {client.shortName}{" "}
                 <strong>
                   não realiza revisão rotineira e individualizada do Conteúdo das Interações
                 </strong>
                 . O acompanhamento do programa é feito preferencialmente a partir de{" "}
                 <strong>métricas agregadas e anonimizadas</strong> (ex.: volume de uso, distribuição
-                por faixa etária, indicadores de moderação automática, taxa de adesão).
+                por faixa etária, indicadores de limitação de taxa e banimento, taxa de adesão).
               </p>
               <p className="text-muted-foreground">
                 <strong>5.2. Acesso individualizado como exceção.</strong> O acesso a interações de
@@ -287,8 +293,10 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
               <ul className="list-none space-y-2 text-muted-foreground">
                 <li>
                   <strong>5.2.1.</strong> suspeita fundada de abuso da Plataforma, de violação dos
-                  Termos de Uso ou de risco à segurança do próprio Usuário ou de terceiros (ex.:
-                  sinais de autoagressão, assédio, tentativa de produção de conteúdo ilícito);
+                  Termos de Uso ou de risco à segurança do próprio Usuário ou de terceiros,
+                  evidenciada por denúncias recebidas (da {client.shortName}, de Responsáveis Legais
+                  ou de terceiros), por recusa reiterada de requisições pelos provedores de IA ou
+                  por outros indícios objetivos;
                 </li>
                 <li>
                   <strong>5.2.2.</strong> solicitação formal e fundamentada do Responsável Legal do
@@ -318,59 +326,69 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
             </CardContent>
           </Card>
 
-          {/* Seção 6: Moderação Automatizada de Conteúdo */}
+          {/* Seção 6: Salvaguardas, Catálogo Restrito e Controles de Uso Aceitável */}
           <Card>
             <CardHeader>
               <div className="flex items-center gap-2">
                 <AlertTriangle className="h-5 w-5 text-primary" />
                 <CardTitle>
-                  <strong>6. Moderação Automatizada de Conteúdo</strong>
+                  <strong>
+                    6. Salvaguardas de Segurança, Catálogo Restrito de Modelos e Controles de Uso
+                    Aceitável
+                  </strong>
                 </CardTitle>
               </div>
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
-                Para proteger a integridade dos Usuários e a adequação do serviço a adolescentes, a
-                Plataforma aplica mecanismos automatizados de moderação:
+                Para proteger a integridade dos Usuários adolescentes e a adequação do serviço ao
+                seu público, a Plataforma combina medidas de proteção aplicadas em diferentes
+                camadas:
               </p>
-              <ul className="list-none space-y-2 text-muted-foreground">
-                <li>
-                  <strong>6.1. Moderação de texto via OpenAI Moderation API:</strong> cada mensagem
-                  textual enviada pelo Usuário (prompt) é previamente avaliada pela{" "}
-                  <em>OpenAI Moderation API</em> — independentemente do modelo de IA selecionado
-                  para a resposta — para identificar e bloquear conteúdos em categorias como{" "}
-                  <strong>
-                    conteúdo sexual, com ênfase na proteção contra exploração de menores
-                  </strong>
-                  , <strong>autoagressão</strong>, <strong>discurso de ódio</strong>,{" "}
-                  <strong>assédio</strong> e <strong>violência</strong>.
-                </li>
-                <li>
-                  <strong>6.2. Limitação de taxa (rate limit) e banimento automático:</strong>{" "}
-                  Usuários que reiteradamente violem a Política de Uso Aceitável estão sujeitos a
-                  restrições de taxa de uso e a banimento automático da Plataforma, com comunicação
-                  à Controladora.
-                </li>
-                <li>
-                  <strong>6.3. Catálogo de modelos restrito:</strong> a lista de modelos de IA
-                  disponibilizada aos Usuários é previamente definida pela Capybara Labs em conjunto
-                  com a Controladora, sendo vedada a habilitação autônoma de modelos pelo Usuário.
-                </li>
-                <li>
-                  <strong>6.4. Limitações atuais de escopo (transparência).</strong> Na presente
-                  data, a moderação automatizada <strong>não abrange</strong> a análise de{" "}
-                  <strong>imagens enviadas pelo Usuário</strong> nem das{" "}
-                  <strong>saídas geradas pelos modelos de IA</strong>. A Capybara Labs e a
-                  Controladora trabalham para ampliar o escopo dos filtros, e quaisquer mudanças
-                  relevantes serão refletidas nesta Política.
-                </li>
-                <li>
-                  <strong>6.5. Dados gerados pela moderação.</strong> Os resultados da moderação
-                  (categorias acionadas, pontuações e decisões de bloqueio) são registrados como
-                  metadados associados à conta do Usuário e utilizados exclusivamente para as
-                  finalidades descritas nesta Política.
-                </li>
-              </ul>
+              <p className="text-muted-foreground">
+                <strong>6.1. Salvaguardas de segurança dos provedores de IA.</strong> Os modelos de
+                IA disponibilizados (Seção 9.1) são fornecidos por terceiros (como OpenAI, Anthropic
+                e Google), que aplicam, do lado de seus próprios servidores, políticas de uso e
+                mecanismos de segurança proprietários. Requisições contrárias a tais políticas podem
+                ser recusadas diretamente pelo provedor. A Capybara Labs e a {client.shortName}{" "}
+                <strong>não operam uma camada própria de análise semântica</strong> do Conteúdo das
+                Interações.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>6.2. Catálogo restrito de modelos.</strong> A Capybara Labs define
+                previamente, em conjunto com a {client.shortName}, quais modelos de IA ficam
+                disponíveis aos Usuários. É{" "}
+                <strong>vedada a habilitação autônoma de modelos</strong> pelo Usuário.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>6.3. Controles de uso aceitável (comportamentais).</strong> A Capybara Labs
+                aplica, com base em <strong>volume e padrões de uso</strong> e independentemente do
+                conteúdo das mensagens, mecanismos automatizados de <em>rate limit</em> e banimento
+                automático de contas com indícios de abuso ou violação reiterada dos Termos de Uso,
+                com comunicação à {client.shortName}.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>6.4. Supervisão por exceção e atendimento a denúncias.</strong> Somam-se às
+                medidas acima: (i) a supervisão agregada e por exceção realizada pela{" "}
+                {client.shortName} (Seção 5); (ii) o atendimento prioritário a denúncias
+                apresentadas por Responsáveis Legais, pela {client.shortName} ou por terceiros; e
+                (iii) a proibição expressa de conteúdo ilícito prevista nos Termos de Uso.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>6.5. O que a Plataforma NÃO faz (transparência).</strong> Na presente data,{" "}
+                <strong>não há análise de conteúdo</strong> — textual ou imagética, de entrada ou de
+                saída — operada pela Capybara Labs sobre mensagens individuais dos Usuários. A
+                proteção descrita nesta Seção apoia-se nas salvaguardas do provedor (6.1), na
+                curadoria do catálogo (6.2), nos controles comportamentais (6.3) e na resposta a
+                denúncias (6.4). Quaisquer ampliações desse escopo serão refletidas nesta Política e
+                comunicadas à {client.shortName}.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>6.6. Dados gerados pelos controles.</strong> Os resultados dos controles de
+                uso (contadores, decisões de limitação, suspensão e banimento) e os registros de
+                denúncias são mantidos como metadados associados à conta do Usuário e utilizados
+                exclusivamente para as finalidades descritas nesta Política.
+              </p>
             </CardContent>
           </Card>
 
@@ -409,9 +427,10 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
                 identifiquem fora do contexto do programa.
               </p>
               <p className="text-muted-foreground">
-                <strong>7.3. Dados de Moderação:</strong> resultados das análises automatizadas
-                descritas na Seção 6, incluindo categorias acionadas, pontuações e decisões
-                (bloqueio, limitação, banimento).
+                <strong>7.3. Dados de Controle de Uso:</strong> registros relativos aos controles
+                descritos na Seção 6.3, compreendendo contadores de uso, decisões de limitação de
+                taxa, suspensão e banimento, bem como denúncias recebidas e encaminhamentos. Não
+                inclui classificações automáticas de conteúdo operadas pela Capybara Labs.
               </p>
               <p className="text-muted-foreground">
                 <strong>7.4. Dados Técnicos e de Uso (Logs):</strong> tipo de dispositivo, sistema
@@ -457,8 +476,8 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
                 </p>
                 <ul className="ml-6 list-inside list-disc space-y-2 text-muted-foreground">
                   <li>
-                    executar a moderação automatizada descrita na Seção 6 e detectar riscos ao
-                    Usuário;
+                    aplicar os controles de uso aceitável descritos na Seção 6.3, apoiar a
+                    supervisão por exceção (Seção 5) e processar denúncias de risco ao Usuário;
                   </li>
                   <li>proteger a Plataforma contra acessos não autorizados, fraudes e abusos;</li>
                   <li>cumprir obrigações legais e regulatórias.</li>
@@ -472,7 +491,7 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
                   <li>
                     geração de relatórios agregados e anonimizados para a {client.shortName}{" "}
                     acompanhar o programa (ex.: volume de uso por núcleo, distribuição etária,
-                    indicadores de moderação, taxa de adesão);
+                    indicadores de limitação e banimento, taxa de adesão);
                   </li>
                   <li>
                     esses relatórios <strong>não identificam Usuários individuais</strong>,
@@ -507,27 +526,31 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
                 A Capybara Labs utiliza sub-operadores estritamente necessários à prestação do
-                serviço, sob obrigações contratuais de confidencialidade, segurança e{" "}
-                <strong>
-                  vedação absoluta de uso dos dados de menores para treinamento de modelos de IA
-                </strong>
-                .
+                serviço, sob obrigações contratuais de confidencialidade e segurança.
               </p>
               <p className="text-muted-foreground">
                 <strong>9.1. Provedores de Modelos de IA:</strong>
               </p>
               <ul className="ml-6 list-inside list-disc space-y-2 text-muted-foreground">
-                <li>
-                  OpenAI (modelos GPT e Moderation API):
-                  https://openai.com/pt-BR/policies/privacy-policy
-                </li>
+                <li>OpenAI (modelos GPT): https://openai.com/pt-BR/policies/privacy-policy</li>
                 <li>Google (modelos Gemini): https://ai.google.dev/gemini-api/terms</li>
                 <li>Anthropic (modelos Claude): https://www.anthropic.com/legal/privacy</li>
               </ul>
               <p className="text-muted-foreground">
-                Sempre que disponíveis, a Capybara Labs contrata junto aos provedores políticas de{" "}
-                <em>Zero Retention</em> ou equivalentes em planos <em>Enterprise</em>, reforçando a
-                vedação de uso dos dados dos Usuários para treinamento de modelos.
+                <strong>
+                  9.1.1. Retenção e uso de prompts pelos provedores — contrapartida da gratuidade.
+                </strong>{" "}
+                Para viabilizar a operação gratuita desta Plataforma no âmbito do programa social, a
+                Capybara Labs contrata modalidades padrão junto aos provedores de IA, sem políticas
+                adicionais de <em>Zero Retention</em>.{" "}
+                <strong>As políticas variam entre provedores:</strong> parte dos provedores não
+                utiliza os prompts e respostas dos Usuários para treinamento dos seus modelos; outra
+                parte pode, nos termos de suas próprias políticas, reter temporariamente os prompts
+                e utilizá-los para aprimoramento dos seus modelos. Por essa razão, e considerando a
+                impossibilidade de o Usuário saber, em cada interação, qual provedor responde, o
+                Usuário é orientado a <strong>não inserir dados pessoais sensíveis</strong> nem
+                informações identificadoras além do estritamente necessário à atividade educacional,
+                conforme a Seção 7.
               </p>
               <p className="text-muted-foreground">
                 <strong>9.2. Provedores de Infraestrutura:</strong> a Plataforma é hospedada em
@@ -574,9 +597,8 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
               <p className="text-muted-foreground">
                 <strong>10.1. Medidas de segurança.</strong> A Capybara Labs adota medidas técnicas
                 e administrativas aptas a proteger os dados pessoais (art. 46 da LGPD), incluindo
-                criptografia em trânsito e em repouso, controle de acesso sob o princípio do menor
-                privilégio, logs de auditoria, monitoramento e políticas internas de segurança da
-                informação.
+                criptografia em trânsito, controle de acesso sob o princípio do menor privilégio,
+                logs de auditoria, monitoramento e políticas internas de segurança da informação.
               </p>
               <p className="text-muted-foreground">
                 <strong>10.2. Retenção.</strong> Os dados pessoais dos Usuários são retidos apenas
@@ -668,10 +690,9 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
               <p className="text-muted-foreground">
                 A Capybara Labs poderá modificar esta Política para refletir mudanças legais,
                 regulatórias ou operacionais. Alterações relevantes serão comunicadas à{" "}
-                {client.shortName}, que informará os Responsáveis Legais dos Usuários na forma
-                prevista no Contrato de Parceria. Alterações substanciais que afetem a base legal ou
-                o escopo do tratamento poderão exigir renovação do consentimento pelo Responsável
-                Legal.
+                {client.shortName}, a quem compete, na qualidade de Controladora, comunicar os
+                Responsáveis Legais e renovar o consentimento quando cabível, na forma prevista no
+                Contrato de Parceria.
               </p>
             </CardContent>
           </Card>
@@ -730,8 +751,9 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
                 disponibilizados.
               </p>
               <p className="text-muted-foreground">
-                Para questões técnicas sobre a Plataforma, a Capybara Labs pode ser contatada pelo
-                e-mail suporte@capybaralabs.com.br.
+                Para questões relativas a dados pessoais e direitos LGPD, a Capybara Labs pode ser
+                contatada pelo e-mail do Encarregado: <strong>dpo@capybaralabs.com.br</strong>. Para
+                questões técnicas sobre a Plataforma: suporte@capybaralabs.com.br.
               </p>
             </CardContent>
           </Card>

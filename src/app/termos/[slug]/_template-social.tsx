@@ -52,14 +52,17 @@ export function TermosTemplateSocial({ client }: Props) {
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
-                Bem-vindo(a) à Plataforma {client.name}. A Plataforma é fornecida pela{" "}
-                <strong>Capybara Labs Inova Simples (I.S.)</strong> ("Capybara Labs") à{" "}
+                Bem-vindo(a) à Plataforma {client.name}. A Plataforma é{" "}
+                <strong>disponibilizada sem ônus financeiro</strong> pela{" "}
+                <strong>Capybara Labs Inova Simples (I.S.)</strong> ("Capybara Labs"), na qualidade
+                de <strong>apoiadora institucional e parceira tecnológica</strong>, à{" "}
                 <strong>{client.fullName}</strong> ("{client.shortName}" ou "
                 <strong>Instituição Parceira</strong>"), no âmbito do{" "}
                 <strong>Contrato de Parceria</strong> celebrado entre as partes, para suportar o
-                programa social gratuito de formação promovido pela {client.shortName}. A Capybara
-                Labs atua exclusivamente como fornecedora de tecnologia e não é parte do referido
-                programa social.
+                programa social gratuito de formação de Jovens Aprendizes promovido pela{" "}
+                {client.shortName}, limitado a <strong>1.500 (mil e quinhentos) Usuários</strong>. A
+                Capybara Labs atua exclusivamente como fornecedora de tecnologia e não é parte do
+                referido programa social.
               </p>
               <p className="text-muted-foreground">
                 Estes Termos de Uso ("Termos") regem a relação entre a Capybara Labs e o{" "}
@@ -82,8 +85,9 @@ export function TermosTemplateSocial({ client }: Props) {
                 depende do consentimento específico e em destaque de pelo menos um dos pais ou
                 responsáveis legais ("Responsável Legal"), obtido pela {client.shortName} no ato de
                 inscrição do Usuário no programa, conforme o art. 14 da Lei nº 13.709/2018 (Lei
-                Geral de Proteção de Dados - LGPD) e o Estatuto da Criança e do Adolescente (ECA -
-                Lei nº 8.069/1990).
+                Geral de Proteção de Dados - LGPD), o Estatuto da Criança e do Adolescente (ECA -
+                Lei nº 8.069/1990) e as normas aplicáveis à proteção de crianças e adolescentes em
+                ambientes digitais (ECA Digital).
               </p>
               <p className="text-muted-foreground">
                 AO ACESSAR, CADASTRAR-SE OU UTILIZAR A PLATAFORMA, O USUÁRIO E SEU RESPONSÁVEL LEGAL
@@ -110,8 +114,10 @@ export function TermosTemplateSocial({ client }: Props) {
               </p>
               <p className="text-muted-foreground">
                 <strong>2.2. Gratuidade.</strong> O acesso à Plataforma é integralmente gratuito ao
-                Usuário, sendo custeado pela {client.shortName} no âmbito do Contrato de Parceria. É
-                vedada a cobrança de qualquer valor do Usuário a título de uso da Plataforma.
+                Usuário e à {client.shortName},{" "}
+                <strong>custeado pela Capybara Labs como apoiadora institucional</strong> do
+                programa, no âmbito do Contrato de Parceria. É vedada a cobrança de qualquer valor
+                do Usuário a título de uso da Plataforma.
               </p>
               <p className="text-muted-foreground">
                 <strong>2.3. Responsabilidade pela Conta.</strong> O Usuário compromete-se a manter
@@ -169,9 +175,10 @@ export function TermosTemplateSocial({ client }: Props) {
                   tenham o Usuário como alvo;
                 </li>
                 <li>
-                  <strong>4.2.</strong> Vedação ao uso dos dados e interações dos Usuários para
-                  treinamento ou ajuste fino de modelos de Inteligência Artificial, próprios ou de
-                  terceiros;
+                  <strong>4.2.</strong> Vedação ao uso dos dados e interações dos Usuários, pela
+                  Capybara Labs, para treinamento ou ajuste fino de modelos de Inteligência
+                  Artificial próprios (a respeito do papel dos provedores de IA contratados na
+                  operação gratuita desta Plataforma, consulte a Política de Privacidade, Seção 9);
                 </li>
                 <li>
                   <strong>4.3.</strong> Possibilidade, a qualquer tempo e sem ônus, de{" "}
@@ -213,8 +220,9 @@ export function TermosTemplateSocial({ client }: Props) {
                   quando estritamente necessário ao objetivo educacional e com a devida cautela;
                 </li>
                 <li>
-                  <strong>5.3.</strong> Tentar burlar, desativar ou interferir nos mecanismos de
-                  moderação, limitação de taxa, autenticação ou segurança da Plataforma;
+                  <strong>5.3.</strong> Tentar burlar, desativar ou interferir nos controles de uso
+                  aceitável, na limitação de taxa, na autenticação, nas salvaguardas de segurança
+                  dos provedores de IA ou em qualquer outro mecanismo de segurança da Plataforma;
                 </li>
                 <li>
                   <strong>5.4.</strong> Praticar engenharia reversa, extração massiva de dados ou
@@ -234,41 +242,56 @@ export function TermosTemplateSocial({ client }: Props) {
             </CardContent>
           </Card>
 
-          {/* Seção 6: Moderação Automatizada */}
+          {/* Seção 6: Salvaguardas, Catálogo Restrito e Controles de Uso Aceitável */}
           <Card>
             <CardHeader>
               <div className="flex items-center gap-2">
                 <Shield className="h-5 w-5 text-primary" />
-                <CardTitle>6. Moderação Automatizada</CardTitle>
+                <CardTitle>
+                  6. Salvaguardas de Segurança, Catálogo Restrito de Modelos e Controles de Uso
+                  Aceitável
+                </CardTitle>
               </div>
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
-                <strong>6.1. Análise de prompts textuais.</strong> Cada mensagem textual enviada
-                pelo Usuário é analisada automaticamente pela <em>OpenAI Moderation API</em> —
-                independentemente do modelo de IA escolhido para gerar a resposta — nas categorias
-                de conteúdo sexual (com ênfase na proteção de menores), autoagressão, discurso de
-                ódio, assédio e violência. Mensagens classificadas como inadequadas serão
-                bloqueadas.
+                <strong>6.1. Salvaguardas de segurança dos provedores de IA.</strong> Os modelos de
+                IA disponibilizados na Plataforma são operados por provedores terceiros (como
+                OpenAI, Anthropic e Google), que aplicam, do lado de seus próprios servidores,
+                políticas de uso e mecanismos de segurança proprietários. Requisições contrárias a
+                tais políticas podem ser recusadas diretamente pelo provedor. A Capybara Labs e a{" "}
+                {client.shortName}{" "}
+                <strong>não operam uma camada própria de análise semântica</strong> das mensagens do
+                Usuário.
               </p>
               <p className="text-muted-foreground">
-                <strong>6.2. Limitação de taxa e banimento automático.</strong> Tentativas
-                reiteradas de uso inadequado poderão acarretar limitação de taxa (
-                <em>rate limit</em>) e banimento automático do Usuário, com comunicação à{" "}
-                {client.shortName}.
-              </p>
-              <p className="text-muted-foreground">
-                <strong>6.3. Catálogo restrito de modelos.</strong> O catálogo de modelos de IA
-                disponível é previamente definido pela Capybara Labs em conjunto com a{" "}
-                {client.shortName}. O Usuário não poderá habilitar modelos autônomos ou não
+                <strong>6.2. Catálogo restrito de modelos.</strong> A Capybara Labs define
+                previamente, em conjunto com a {client.shortName}, quais modelos de IA ficam
+                disponíveis. O Usuário <strong>não pode habilitar modelos autônomos</strong> ou não
                 autorizados.
               </p>
               <p className="text-muted-foreground">
-                <strong>6.4. Limitações atuais dos filtros.</strong> Na presente data, a moderação
-                automatizada <strong>não cobre</strong> a análise de imagens enviadas pelo Usuário
-                nem das saídas produzidas pelos modelos de IA. A Capybara Labs e a{" "}
-                {client.shortName} envidarão esforços contínuos para ampliar o escopo dos filtros;
-                atualizações relevantes serão refletidas nestes Termos e na Política de Privacidade.
+                <strong>6.3. Controles de uso aceitável (comportamentais).</strong> A Capybara Labs
+                aplica, com base em volume e padrões de uso e independentemente do conteúdo das
+                mensagens, limitação de taxa (<em>rate limit</em>) e banimento automático de contas
+                com indícios de abuso ou de violação reiterada destes Termos, com comunicação à{" "}
+                {client.shortName}.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>6.4. Supervisão por exceção e denúncias.</strong> Complementarmente, a{" "}
+                {client.shortName} realiza supervisão agregada e por exceção (conforme Seção 7) e
+                processa prioritariamente denúncias apresentadas pelo Responsável Legal, pela
+                própria {client.shortName} ou por terceiros.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>6.5. Transparência quanto a limitações.</strong> A proteção descrita nesta
+                Seção não equivale a uma camada de moderação ativa operada pela Capybara Labs.
+                Apoia-se nas salvaguardas dos provedores (6.1), na curadoria do catálogo (6.2), nos
+                controles comportamentais (6.3), na supervisão por exceção da {client.shortName}{" "}
+                (6.4) e na proibição expressa de conteúdo ilícito prevista na Seção 5. Dada a
+                natureza probabilística dos modelos e o fato de os filtros dos provedores operarem
+                fora do controle direto da Capybara Labs, não se garante a supressão integral de
+                todo e qualquer conteúdo inadequado.
               </p>
             </CardContent>
           </Card>
@@ -284,10 +307,10 @@ export function TermosTemplateSocial({ client }: Props) {
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
                 <strong>7.1. Acompanhamento agregado.</strong> Em razão da escala do programa
-                (superior a mil Usuários potenciais) e da ausência de equipe dedicada a revisar
-                interações individuais, a {client.shortName} realiza o acompanhamento pedagógico
-                principalmente por meio de <strong>métricas agregadas e anonimizadas</strong>, sem
-                revisão rotineira de conversas individuais.
+                (limitado a 1.500 Usuários) e da ausência de equipe dedicada a revisar interações
+                individuais, a {client.shortName} realiza o acompanhamento pedagógico principalmente
+                por meio de <strong>métricas agregadas e anonimizadas</strong>, sem revisão
+                rotineira de conversas individuais.
               </p>
               <p className="text-muted-foreground">
                 <strong>7.2. Acesso individualizado como exceção.</strong> O acesso ao conteúdo das
@@ -335,9 +358,10 @@ export function TermosTemplateSocial({ client }: Props) {
                 obrigações legais aplicáveis.
               </p>
               <p className="text-muted-foreground">
-                <strong>8.4. Vedação ao treinamento de IA.</strong> Reitera-se a vedação ao uso do
-                conteúdo do Usuário para treinamento ou ajuste fino de modelos de Inteligência
-                Artificial, em consonância com a Seção 4.2.
+                <strong>8.4. Uso para treinamento de IA.</strong> A Capybara Labs não utiliza o
+                conteúdo do Usuário para treinar modelos próprios. Sobre o uso de prompts pelos
+                provedores de IA contratados na operação gratuita desta Plataforma, consulte a
+                Política de Privacidade, Seção 9.
               </p>
               <p className="text-muted-foreground">
                 <strong>8.5. Componentes de terceiros.</strong> A Plataforma utiliza, entre outros,
@@ -363,14 +387,16 @@ export function TermosTemplateSocial({ client }: Props) {
                 psicológica ou financeira prestada por profissional qualificado.
               </p>
               <p className="text-muted-foreground">
-                <strong>9.2. Alcance da moderação.</strong> A Capybara Labs implementa e mantém os
-                mecanismos de moderação descritos na Seção 6 e compromete-se a aprimorá-los de forma
-                contínua. Dada, contudo, a natureza probabilística dos modelos de IA e as limitações
-                de escopo atualmente declaradas (Seção 6.4),{" "}
-                <strong>não se garante a supressão integral</strong> de todo e qualquer conteúdo
-                inadequado. A presente cláusula não exclui o dever da Capybara Labs de atuar
-                diligentemente em relação a riscos de que venha a tomar conhecimento, especialmente
-                aqueles envolvendo a integridade de crianças e adolescentes.
+                <strong>9.2. Alcance das salvaguardas.</strong> A proteção contra conteúdo
+                inadequado apoia-se (i) nas salvaguardas de segurança dos provedores de IA, (ii) no
+                catálogo restrito de modelos e (iii) nos controles comportamentais de uso aceitável,
+                conforme a Seção 6. Dada a natureza probabilística dos modelos de IA e o fato de que
+                tais salvaguardas são operadas por terceiros ou fora da camada semântica da
+                Plataforma, <strong>não se garante a supressão integral</strong> de todo e qualquer
+                conteúdo inadequado. A presente cláusula não exclui o dever da Capybara Labs e da{" "}
+                {client.shortName} de atuarem diligentemente em relação a riscos de que venham a
+                tomar conhecimento, especialmente aqueles envolvendo a integridade de crianças e
+                adolescentes.
               </p>
               <p className="text-muted-foreground">
                 <strong>9.3. Disponibilidade do serviço.</strong> A Plataforma é fornecida "como
@@ -427,8 +453,10 @@ export function TermosTemplateSocial({ client }: Props) {
               <p className="text-muted-foreground">
                 <strong>11.1. Medidas automáticas.</strong> A Capybara Labs poderá limitar a taxa de
                 uso, suspender ou banir automaticamente o Usuário diante de violação das regras de
-                conduta (Seção 5) ou de atuação dos mecanismos de moderação (Seção 6), com registro
-                da medida e comunicação à {client.shortName}.
+                conduta (Seção 5) ou com base nos controles comportamentais descritos na Seção 6.3,
+                com registro da medida e comunicação à {client.shortName}. Requisições recusadas
+                diretamente pelos provedores de IA com base em suas políticas, por si sós, não
+                configuram medida da Capybara Labs.
               </p>
               <p className="text-muted-foreground">
                 <strong>11.2. Revogação do consentimento.</strong> O Responsável Legal ou o próprio
@@ -512,8 +540,9 @@ export function TermosTemplateSocial({ client }: Props) {
                 disponibilizados aos Responsáveis Legais.
               </p>
               <p className="text-muted-foreground">
-                Questões técnicas sobre a Plataforma podem ser encaminhadas à Capybara Labs pelo
-                e-mail: suporte@capybaralabs.com.br.
+                Para questões relativas a dados pessoais e direitos LGPD, a Capybara Labs pode ser
+                contatada pelo e-mail do Encarregado: <strong>dpo@capybaralabs.com.br</strong>.
+                Questões técnicas sobre a Plataforma: suporte@capybaralabs.com.br.
               </p>
             </CardContent>
           </Card>

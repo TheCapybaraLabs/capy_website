@@ -211,8 +211,9 @@ export function TermosTemplatePublic({ client }: Props) {
                   Plataforma a terceiros (<em>reseller</em> não autorizado);
                 </li>
                 <li>
-                  <strong>5.5.</strong> Tentar burlar, desativar ou interferir nos mecanismos de
-                  moderação, limitação de taxa, autenticação ou segurança da Plataforma;
+                  <strong>5.5.</strong> Tentar burlar, desativar ou interferir nos controles de uso
+                  aceitável, na limitação de taxa, na autenticação, nas salvaguardas de segurança
+                  dos provedores de IA ou em qualquer outro mecanismo de segurança da Plataforma;
                 </li>
                 <li>
                   <strong>5.6.</strong> Violar direitos de terceiros, incluindo direitos autorais,
@@ -227,28 +228,33 @@ export function TermosTemplatePublic({ client }: Props) {
             </CardContent>
           </Card>
 
-          {/* Seção 6: Moderação Automatizada */}
+          {/* Seção 6: Salvaguardas de Segurança e Controles de Uso Aceitável */}
           <Card>
             <CardHeader>
               <div className="flex items-center gap-2">
                 <Shield className="h-5 w-5 text-primary" />
-                <CardTitle>6. Moderação Automatizada</CardTitle>
+                <CardTitle>
+                  6. Salvaguardas de Segurança dos Provedores de IA e Controles de Uso Aceitável
+                </CardTitle>
               </div>
             </CardHeader>
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
-                <strong>6.1. Análise de prompts textuais.</strong> Cada prompt textual enviado pelo
-                Usuário é submetido, automaticamente, à análise da <em>OpenAI Moderation API</em> —
-                independentemente do modelo de IA selecionado para gerar a resposta — nas categorias
-                de conteúdo <strong>sexual</strong> (com ênfase na proteção de menores),{" "}
-                <strong>autoagressão</strong>, <strong>discurso de ódio</strong>,{" "}
-                <strong>assédio</strong> e <strong>violência</strong>. Prompts classificados como
-                inadequados serão bloqueados.
+                <strong>6.1. Salvaguardas de segurança dos provedores de IA.</strong> Os modelos de
+                IA integrados à Plataforma são operados por provedores terceiros (como OpenAI,
+                Anthropic e Google). Cada provedor aplica, no âmbito de seus próprios serviços,
+                políticas de uso e filtros de segurança proprietários. Requisições enviadas aos
+                provedores estão sujeitas a tais políticas, podendo ser recusadas diretamente pelo
+                provedor quando contrariarem suas regras. Ao utilizar a Plataforma, o Usuário
+                reconhece estar vinculado, por meio da Capybara Labs, às políticas de uso dos
+                provedores de IA acionados.
               </p>
               <p className="text-muted-foreground">
-                <strong>6.2. Limitação de taxa e banimento automático.</strong> Tentativas
-                reiteradas de uso inadequado poderão resultar em <em>rate limit</em>, suspensão ou
-                banimento automático da conta, conforme a Seção 12.
+                <strong>6.2. Ausência de camada própria de moderação de conteúdo.</strong> Para fins
+                de transparência, a Capybara Labs <strong>não opera</strong> uma camada própria de
+                análise semântica sobre os prompts enviados pelo Usuário nem sobre as saídas
+                geradas. A avaliação de conteúdo, quando ocorre, é de responsabilidade dos
+                provedores de IA referidos no item 6.1.
               </p>
               <p className="text-muted-foreground">
                 <strong>6.3. Catálogo restrito de modelos.</strong> O catálogo de modelos de IA
@@ -257,12 +263,17 @@ export function TermosTemplatePublic({ client }: Props) {
                 permissões estendidas por conta própria.
               </p>
               <p className="text-muted-foreground">
-                <strong>6.4. Limitações atuais dos filtros.</strong> Na presente data, a moderação
-                automatizada <strong>não abrange</strong> a análise de{" "}
-                <strong>imagens enviadas</strong> pelo Usuário nem das{" "}
-                <strong>saídas produzidas pelos modelos</strong> de IA. A Capybara Labs
-                compromete-se a envidar esforços contínuos para ampliar o escopo dos filtros;
-                atualizações relevantes serão refletidas nestes Termos e na Política de Privacidade.
+                <strong>6.4. Controles de uso aceitável (comportamentais).</strong> A Capybara Labs
+                aplica controles automatizados baseados em <strong>volume e padrões de uso</strong>{" "}
+                — independentes do conteúdo das mensagens — incluindo limitação de taxa (
+                <em>rate limit</em>) e suspensão ou banimento automático de contas com indícios de
+                abuso ou violação reiterada destes Termos. Tais controles{" "}
+                <strong>não constituem moderação de conteúdo</strong>.
+              </p>
+              <p className="text-muted-foreground">
+                <strong>6.5. Conduta do Usuário.</strong> O conteúdo inserido pelo Usuário permanece
+                de sua responsabilidade e está sujeito à cláusula de conduta da Seção 5 e às
+                políticas dos provedores de IA, sem prejuízo das medidas previstas na Seção 12.
               </p>
             </CardContent>
           </Card>
@@ -289,8 +300,9 @@ export function TermosTemplatePublic({ client }: Props) {
                 operadores/suboperadores estritamente necessários (incluindo provedores de
                 infraestrutura e LLM Providers) uma licença gratuita, limitada, mundial e revogável
                 para tratar o conteúdo inserido <strong>apenas e tão somente</strong> com o
-                propósito de prestar o serviço, operar a Plataforma, garantir segurança e moderação
-                e cumprir obrigações legais aplicáveis.
+                propósito de prestar o serviço, operar a Plataforma, garantir segurança e aplicar os
+                controles de uso aceitável descritos na Seção 6, bem como cumprir obrigações legais
+                aplicáveis.
               </p>
               <p className="text-muted-foreground">
                 <strong>7.3. Vedação ao uso para treinamento de IA.</strong> É{" "}
@@ -405,11 +417,12 @@ export function TermosTemplatePublic({ client }: Props) {
                 ininterrupta ou livre de erros, ressalvadas as garantias legais aplicáveis.
               </p>
               <p className="text-muted-foreground">
-                <strong>10.3. Escopo da moderação.</strong> A Capybara Labs implementa os mecanismos
-                de moderação descritos na Seção 6 e compromete-se a aprimorá-los. Dada, contudo, a
-                natureza probabilística dos modelos e as limitações de escopo declaradas na Seção
-                6.4, <strong>não se garante</strong> a supressão integral de todo e qualquer
-                conteúdo inadequado.
+                <strong>10.3. Escopo das salvaguardas.</strong> A proteção contra conteúdo
+                inadequado apoia-se principalmente nas salvaguardas dos provedores de IA e nos
+                controles de uso aceitável descritos na Seção 6. Dada a natureza probabilística dos
+                modelos e o fato de que tais salvaguardas são operadas por terceiros fora do
+                controle direto da Capybara Labs, <strong>não se garante</strong> a supressão
+                integral de todo e qualquer conteúdo inadequado.
               </p>
             </CardContent>
           </Card>
@@ -471,10 +484,11 @@ export function TermosTemplatePublic({ client }: Props) {
               </p>
               <p className="text-muted-foreground">
                 <strong>12.2. Medidas automáticas.</strong> A Capybara Labs poderá aplicar{" "}
-                <em>rate limit</em>, suspender ou banir automaticamente contas que violem estas
-                regras ou em relação às quais os mecanismos de moderação (Seção 6) detectem conduta
-                proibida, com registro em log e comunicação ao Usuário pelos meios de contato
-                cadastrados.
+                <em>rate limit</em>, suspender ou banir automaticamente contas diante de violação
+                destas regras ou de indícios comportamentais de abuso apurados pelos controles de
+                uso aceitável (Seção 6.4), com registro em log e comunicação ao Usuário pelos meios
+                de contato cadastrados. Requisições recusadas diretamente pelos provedores de IA com
+                base em suas políticas de uso, por si sós, não configuram medida da Capybara Labs.
               </p>
               <p className="text-muted-foreground">
                 <strong>12.3. Medidas manuais.</strong> A Capybara Labs poderá também adotar
