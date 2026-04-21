@@ -331,9 +331,7 @@ export function TermosTemplatePublic({ client }: Props) {
             <CardContent className="space-y-4 text-justify">
               <p className="text-muted-foreground">
                 <strong>8.1.</strong> A Plataforma utiliza componentes de software de terceiros e de
-                código aberto, regidos por suas respectivas licenças. Em particular, a Plataforma
-                utiliza, entre outros, componentes do projeto <strong>LibreChat</strong>,
-                distribuído sob a licença MIT.
+                código aberto, regidos por suas respectivas licenças.
               </p>
               <p className="text-muted-foreground">
                 <strong>8.2.</strong> O Usuário reconhece que o cumprimento dos termos das licenças

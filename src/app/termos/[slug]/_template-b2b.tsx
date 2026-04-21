@@ -248,9 +248,9 @@ export function TermosTemplateB2B({ client }: Props) {
                 software de terceiros, que são regidos por suas próprias licenças.
               </p>
               <p className="text-muted-foreground">
-                <strong>6.2.</strong> A Plataforma utiliza, entre outros, componentes do projeto
-                LibreChat, disponibilizado sob a licença MIT. A Capybara Labs cumpre com os termos e
-                condições de tais licenças.
+                <strong>6.2.</strong> A Plataforma utiliza componentes de software de terceiros e de
+                código aberto, regidos por suas respectivas licenças. A Capybara Labs cumpre com os
+                termos e condições de tais licenças.
               </p>
               <p className="text-muted-foreground">
                 <strong>6.3.</strong> NA MÁXIMA EXTENSÃO PERMITIDA PELA LEI, QUALQUER SOFTWARE DE

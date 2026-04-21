@@ -363,8 +363,8 @@ export function TermosTemplateSocial({ client }: Props) {
                 Política de Privacidade, Seção 9.
               </p>
               <p className="text-muted-foreground">
-                <strong>8.5. Componentes de terceiros.</strong> A Plataforma utiliza, entre outros,
-                componentes do projeto LibreChat, distribuído sob a licença MIT.
+                <strong>8.5. Componentes de terceiros.</strong> A Plataforma utiliza componentes de
+                software de terceiros e de código aberto, regidos por suas respectivas licenças.
               </p>
             </CardContent>
           </Card>
