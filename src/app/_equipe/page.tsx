@@ -1,9 +1,11 @@
-import { Award, Linkedin, Mail } from "lucide-react";
+import { Award, Mail } from "lucide-react";
+import type { Metadata } from "next";
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Equipe",
   description:
     "Conheça nossa equipe multidisciplinar e altamente eficiente. Especialistas em IA, desenvolvimento e inovação tecnológica.",
@@ -58,7 +60,13 @@ export default function TeamPage() {
                             type="button"
                             className="text-muted-foreground transition-colors hover:text-primary"
                           >
-                            <Linkedin className="h-5 w-5" />
+                            <Image
+                              src="/linkedin.svg"
+                              alt="LinkedIn"
+                              width={20}
+                              height={20}
+                              className="h-5 w-5"
+                            />
                           </button>
                         </div>
                       </div>
