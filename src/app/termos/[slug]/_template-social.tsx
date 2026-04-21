@@ -73,11 +73,11 @@ export function TermosTemplateSocial({ client }: Props) {
                 firmados entre eles.
               </p>
               <p className="text-muted-foreground">
-                <strong>1.1. Ausência de vínculo empregatício.</strong> A utilização da Plataforma
-                não cria vínculo empregatício, de estágio ou de aprendizagem entre o Usuário e a{" "}
-                {client.shortName} ou a Capybara Labs. Eventuais estágios ou aprendizagens
-                realizados pelo Usuário em empresas terceiras são independentes destes Termos, e
-                tais empresas não são parte deste instrumento nem recebem dados da Plataforma.
+                <strong>1.1. Ausência de vínculo com a Capybara Labs.</strong> A utilização da
+                Plataforma não cria vínculo empregatício, de estágio ou de aprendizagem entre o
+                Usuário e a Capybara Labs. Eventuais relações de estágio ou aprendizagem mantidas
+                pelo Usuário com terceiros são independentes destes Termos; tais terceiros não são
+                parte deste instrumento nem recebem dados da Plataforma.
               </p>
               <p className="text-muted-foreground">
                 <strong>1.2. Consentimento do Responsável Legal.</strong> Considerando que os

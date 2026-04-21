@@ -69,16 +69,16 @@ export function PrivacidadeTemplateSocial({ client }: Props) {
                 "{client.name}" ("<strong>Plataforma</strong>").
               </p>
               <p className="text-muted-foreground">
-                Os Usuários são <strong>adolescentes e jovens</strong>, em regra com idade entre 14
-                e 24 anos, inscritos no programa social gratuito da Instituição Parceira, com acesso
-                à Plataforma <strong>limitado a 1.500 (mil e quinhentos) Jovens Aprendizes</strong>.{" "}
+                Os Usuários são <strong>Jovens Aprendizes</strong> inscritos pela Instituição
+                Parceira no programa social gratuito, com acesso à Plataforma{" "}
+                <strong>limitado a 1.500 (mil e quinhentos) Usuários</strong>.{" "}
                 <strong>
-                  Não existe vínculo empregatício, de estágio ou de aprendizagem entre o Usuário e a{" "}
-                  {client.shortName}, tampouco entre o Usuário e a Capybara Labs.
+                  Não existe vínculo empregatício, de estágio ou de aprendizagem entre o Usuário e a
+                  Capybara Labs.
                 </strong>{" "}
-                Parte dos Usuários realiza estágio em empresas parceiras da Instituição Parceira;
-                tais empresas são <strong>terceiros</strong> em relação a esta Política e, salvo
-                obrigação legal, não recebem acesso aos dados tratados na Plataforma.
+                Eventuais empresas nas quais o Usuário mantenha relação de estágio ou aprendizagem
+                são <strong>terceiros</strong> em relação a esta Política e, salvo obrigação legal,
+                não recebem acesso aos dados tratados na Plataforma.
               </p>
               <p className="text-muted-foreground">
                 Esta Política aplica-se exclusivamente à Plataforma "{client.name}",{" "}
