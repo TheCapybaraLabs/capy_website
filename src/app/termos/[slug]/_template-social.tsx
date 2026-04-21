@@ -70,10 +70,10 @@ export function TermosTemplateSocial({ client }: Props) {
                 decorrentes do programa são regidas pelos instrumentos próprios firmados entre eles.
               </p>
               <p className="text-muted-foreground">
-                <strong>1.1. Consentimento.</strong> Parte dos Usuários é menor de idade
-                (adolescentes de 14 a 17 anos); a maioria é maior de idade. O acesso à Plataforma
-                depende: (i) para os Usuários <strong>menores de idade</strong>, do consentimento
-                específico e em destaque de pelo menos um dos pais ou responsáveis legais ( "
+                <strong>Consentimento.</strong> Parte dos Usuários é menor de idade (adolescentes de
+                14 a 17 anos); a maioria é maior de idade. O acesso à Plataforma depende: (i) para
+                os Usuários <strong>menores de idade</strong>, do consentimento específico e em
+                destaque de pelo menos um dos pais ou responsáveis legais ( "
                 <strong>Responsável Legal</strong>"), nos termos do art. 14 da Lei nº 13.709/2018
                 (Lei Geral de Proteção de Dados - LGPD); (ii) para os Usuários{" "}
                 <strong>maiores de idade</strong>, do consentimento próprio do Usuário (art. 7º, I,
