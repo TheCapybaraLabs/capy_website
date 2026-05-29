@@ -28,6 +28,11 @@ export function Footer() {
             <h3 className="font-semibold">Soluções</h3>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
+                <Link href="/solucoes#saas" className="transition-colors hover:text-foreground">
+                  Plataformas SaaS
+                </Link>
+              </li>
+              <li>
                 <Link
                   href="/solucoes#consultoria"
                   className="transition-colors hover:text-foreground"
@@ -43,11 +48,6 @@ export function Footer() {
                   Desenvolvimento Sob Medida
                 </Link>
               </li>
-              <li>
-                <Link href="/solucoes#saas" className="transition-colors hover:text-foreground">
-                  Plataformas SaaS
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -57,6 +57,11 @@ export function Footer() {
               <li>
                 <Link href="/#sobre" className="transition-colors hover:text-foreground">
                   Sobre Nós
+                </Link>
+              </li>
+              <li>
+                <Link href="/#cases" className="transition-colors hover:text-foreground">
+                  Cases
                 </Link>
               </li>
               <li>

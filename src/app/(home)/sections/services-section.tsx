@@ -19,6 +19,33 @@ export function ServicesSection() {
           <Card className="relative overflow-hidden border-2 transition-colors hover:border-primary">
             <CardHeader>
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+                <Cloud className="h-6 w-6 text-primary" />
+              </div>
+              <CardTitle>Plataformas SaaS</CardTitle>
+              <CardDescription>
+                Software robusto como serviço, pronto para impulsionar sua inovação
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                <p className="text-sm">LabsChat.Ai white-label</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                <p className="text-sm">Hospedagem nacional (LGPD)</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                <p className="text-sm">Solução gerenciada completa</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Service 2 */}
+          <Card className="relative overflow-hidden border-2 transition-colors hover:border-primary">
+            <CardHeader>
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
                 <Brain className="h-6 w-6 text-primary" />
               </div>
               <CardTitle>Consultoria & Capacitação em IA</CardTitle>
@@ -42,7 +69,7 @@ export function ServicesSection() {
             </CardContent>
           </Card>
 
-          {/* Service 2 */}
+          {/* Service 3 */}
           <Card className="relative overflow-hidden border-2 transition-colors hover:border-primary">
             <CardHeader>
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
@@ -65,33 +92,6 @@ export function ServicesSection() {
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                 <p className="text-sm">Automação de processos críticos</p>
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Service 3 */}
-          <Card className="relative overflow-hidden border-2 transition-colors hover:border-primary">
-            <CardHeader>
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-                <Cloud className="h-6 w-6 text-primary" />
-              </div>
-              <CardTitle>Plataformas SaaS</CardTitle>
-              <CardDescription>
-                Software robusto como serviço, pronto para impulsionar sua inovação
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              <div className="flex items-start gap-2">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                <p className="text-sm">LabsChat white-label</p>
-              </div>
-              <div className="flex items-start gap-2">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                <p className="text-sm">Hospedagem nacional (LGPD)</p>
-              </div>
-              <div className="flex items-start gap-2">
-                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                <p className="text-sm">Solução gerenciada completa</p>
               </div>
             </CardContent>
           </Card>

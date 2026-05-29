@@ -7,6 +7,7 @@ import {
   Globe,
   Lightbulb,
   Lock,
+  Scale,
   Shield,
   Sparkles,
   Target,
@@ -23,13 +24,13 @@ import { CONTACT_EMAIL } from "@/constants/config";
 export const metadata: Metadata = {
   title: "Soluções",
   description:
-    "Três pilares de excelência: Consultoria em IA, Desenvolvimento Sob Medida e Plataformas SaaS. Transforme sua organização com soluções inovadoras.",
+    "Três pilares de excelência: Plataformas SaaS, Consultoria em IA e Desenvolvimento Sob Medida. Transforme sua organização com soluções inovadoras.",
   keywords: [
+    "plataformas SaaS",
+    "LabsChat.Ai",
+    "white-label",
     "consultoria IA",
     "desenvolvimento sob medida",
-    "plataformas SaaS",
-    "LabsChat",
-    "white-label",
   ],
 };
 
@@ -56,7 +57,167 @@ export default function SolucoesPage() {
       </section>
 
       <div className="mx-auto max-w-7xl space-y-24 px-4 py-12 sm:px-6 lg:px-8">
-        {/* Pilar 1: Consultoria e Capacitação */}
+        {/* Pilar 1: Plataformas SaaS */}
+        <section id="saas" className="space-y-8">
+          <div className="flex items-start gap-4">
+            <div className="rounded-lg bg-primary/10 p-4">
+              <Cloud className="h-8 w-8 text-primary" />
+            </div>
+            <div className="flex-1">
+              <h2 className="mb-2 font-bold text-3xl">
+                1. Plataformas SaaS (Software como Serviço)
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Produtos robustos e prontos para uso, projetados para inovar com segurança
+              </p>
+            </div>
+          </div>
+
+          <Card className="border-2 border-primary/20">
+            <CardHeader>
+              <Badge variant="secondary" className="mb-2 w-fit">
+                Produto Destaque
+              </Badge>
+              <CardTitle className="text-2xl">LabsChat.Ai (White-Label)</CardTitle>
+              <CardDescription>
+                Plataforma de IA generativa com foco absoluto em segurança, confidencialidade e
+                soberania dos dados
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <p className="text-muted-foreground">
+                Leva o poder da IA generativa para dentro da sua organização em um ambiente
+                controlado, privado e alinhado à legislação brasileira (LGPD).
+              </p>
+
+              <div className="grid gap-6 md:grid-cols-2">
+                <div className="space-y-4">
+                  <h3 className="flex items-center gap-2 font-semibold text-lg">
+                    <Shield className="h-5 w-5 text-primary" />
+                    Segurança e Privacidade
+                  </h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <Lock className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <div>
+                        <div className="font-medium">Confidencialidade Contratual</div>
+                        <p className="text-muted-foreground text-sm">
+                          Nenhuma interação é usada para treinar modelos externos
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Globe className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <div>
+                        <div className="font-medium">Soberania de Dados</div>
+                        <p className="text-muted-foreground text-sm">
+                          Hospedagem 100% nacional em servidores no Brasil
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Database className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <div>
+                        <div className="font-medium">Conformidade LGPD</div>
+                        <p className="text-muted-foreground text-sm">
+                          Totalmente alinhado à legislação brasileira de proteção de dados
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="flex items-center gap-2 font-semibold text-lg">
+                    <Sparkles className="h-5 w-5 text-primary" />
+                    Recursos Avançados
+                  </h3>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <span>
+                        <strong>White-Label:</strong> Customização completa com identidade visual do
+                        cliente
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <span>
+                        <strong>Múltiplos LLMs:</strong> GPT, Gemini, Claude e outros modelos
+                        avançados
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <span>
+                        <strong>Agentes Inteligentes:</strong> Automatize fluxos e incorpore métodos
+                        próprios à plataforma
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <span>
+                        <strong>Prompt.Labs:</strong> Agente proprietário que ajuda usuários a
+                        construir prompts melhores
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                      <span>
+                        <strong>Solução Gerenciada:</strong> Licenciamento, suporte e
+                        infraestrutura, tudo incluso
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-xl">
+                <Cloud className="h-5 w-5 text-primary" />
+                Infraestrutura Gerenciada
+              </CardTitle>
+              <CardDescription>
+                Cuidamos de toda a operação para que você foque no seu negócio
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+                <div className="rounded-lg border bg-card p-4">
+                  <div className="mb-1 font-semibold">Hospedagem Nacional</div>
+                  <p className="text-muted-foreground text-sm">
+                    Servidores no Brasil, em conformidade com a LGPD
+                  </p>
+                </div>
+                <div className="rounded-lg border bg-card p-4">
+                  <div className="mb-1 font-semibold">Isolamento por Cliente</div>
+                  <p className="text-muted-foreground text-sm">
+                    Cada organização opera em um ambiente próprio e segregado
+                  </p>
+                </div>
+                <div className="rounded-lg border bg-card p-4">
+                  <div className="mb-1 font-semibold">Backups Automáticos</div>
+                  <p className="text-muted-foreground text-sm">
+                    Rotinas automáticas de backup e recuperação dos seus dados
+                  </p>
+                </div>
+                <div className="rounded-lg border bg-card p-4">
+                  <div className="mb-1 font-semibold">Monitoramento Contínuo</div>
+                  <p className="text-muted-foreground text-sm">
+                    Acompanhamento de disponibilidade e desempenho
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <Separator />
+
+        {/* Pilar 2: Consultoria e Capacitação */}
         <section id="consultoria" className="space-y-8">
           <div className="flex items-start gap-4">
             <div className="rounded-lg bg-primary/10 p-4">
@@ -64,7 +225,7 @@ export default function SolucoesPage() {
             </div>
             <div className="flex-1">
               <h2 className="mb-2 font-bold text-3xl">
-                1. Consultoria e Capacitação Técnica em IA
+                2. Consultoria e Capacitação Técnica em IA
               </h2>
               <p className="text-lg text-muted-foreground">
                 Treinamentos práticos e interativos focados em resultados tangíveis
@@ -138,14 +299,14 @@ export default function SolucoesPage() {
 
         <Separator />
 
-        {/* Pilar 2: Desenvolvimento Sob Medida */}
+        {/* Pilar 3: Desenvolvimento Sob Medida */}
         <section id="desenvolvimento" className="space-y-8">
           <div className="flex items-start gap-4">
             <div className="rounded-lg bg-primary/10 p-4">
               <Code2 className="h-8 w-8 text-primary" />
             </div>
             <div className="flex-1">
-              <h2 className="mb-2 font-bold text-3xl">2. Desenvolvimento de Soluções Sob Medida</h2>
+              <h2 className="mb-2 font-bold text-3xl">3. Desenvolvimento de Soluções Sob Medida</h2>
               <p className="text-lg text-muted-foreground">
                 Plataformas customizadas que resolvem desafios únicos de negócio
               </p>
@@ -227,122 +388,39 @@ export default function SolucoesPage() {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
 
-        <Separator />
-
-        {/* Pilar 3: Plataformas SaaS */}
-        <section id="saas" className="space-y-8">
-          <div className="flex items-start gap-4">
-            <div className="rounded-lg bg-primary/10 p-4">
-              <Cloud className="h-8 w-8 text-primary" />
-            </div>
-            <div className="flex-1">
-              <h2 className="mb-2 font-bold text-3xl">
-                3. Plataformas SaaS (Software como Serviço)
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Produtos robustos e prontos para uso, projetados para inovação segura
-              </p>
-            </div>
-          </div>
-
-          <Card className="border-2 border-primary/20">
-            <CardHeader>
-              <Badge variant="secondary" className="mb-2 w-fit">
-                Produto Destaque
-              </Badge>
-              <CardTitle className="text-2xl">Plataforma de LabsChat (White-Label)</CardTitle>
-              <CardDescription>
-                Solução avançada com foco absoluto em segurança, confidencialidade e soberania dos
-                dados
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <p className="text-muted-foreground">
-                Permite que organizações adotem o poder da IA generativa em um ambiente controlado,
-                privado e alinhado à legislação brasileira (LGPD).
-              </p>
-
-              <div className="grid gap-6 md:grid-cols-2">
-                <div className="space-y-4">
+                <div className="space-y-4 rounded-lg bg-muted/50 p-6">
                   <h3 className="flex items-center gap-2 font-semibold text-lg">
-                    <Shield className="h-5 w-5 text-primary" />
-                    Segurança e Privacidade
+                    <Scale className="h-5 w-5 text-primary" />
+                    Exemplo de Atuação: Automações para Escritórios de Advocacia
                   </h3>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3">
-                      <Lock className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                      <div>
-                        <div className="font-medium">Confidencialidade Contratual</div>
-                        <p className="text-muted-foreground text-sm">
-                          Nenhuma interação é usada para treinar modelos externos
-                        </p>
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Globe className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                      <div>
-                        <div className="font-medium">Soberania de Dados</div>
-                        <p className="text-muted-foreground text-sm">
-                          Hospedagem 100% nacional em servidores no Brasil
-                        </p>
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Database className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                      <div>
-                        <div className="font-medium">Conformidade LGPD</div>
-                        <p className="text-muted-foreground text-sm">
-                          Totalmente alinhado à legislação brasileira de proteção de dados
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="flex items-center gap-2 font-semibold text-lg">
-                    <Sparkles className="h-5 w-5 text-primary" />
-                    Recursos Avançados
-                  </h3>
-                  <ul className="space-y-2 text-muted-foreground">
+                  <p className="text-muted-foreground">
+                    Automações que localizam e acompanham processos automaticamente em múltiplos
+                    sistemas de tribunais:
+                  </p>
+                  <ul className="grid gap-3 md:grid-cols-2">
                     <li className="flex items-start gap-2">
                       <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                      <span>
-                        <strong>White-Label:</strong> Customização completa com identidade visual do
-                        cliente
+                      <span className="text-sm">
+                        Localização de processos por CPF, CNPJ ou OAB via RPA
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                      <span>
-                        <strong>Múltiplos LLMs:</strong> GPT, Gemini, Claude e outros modelos
-                        avançados
+                      <span className="text-sm">
+                        Cobertura de múltiplos sistemas de tribunais em um só lugar
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                      <span>
-                        <strong>Prompt.Labs:</strong> Ferramenta proprietária para otimização de
-                        prompts
+                      <span className="text-sm">
+                        Acompanhamento automático de novas movimentações processuais
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                      <span>
-                        <strong>Biblioteca de Prompts:</strong> Sistema pessoal para organização e
-                        reutilização
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <ChevronRight className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                      <span>
-                        <strong>Solução Gerenciada:</strong> Licenciamento, suporte e infraestrutura
-                        inclusos
+                      <span className="text-sm">
+                        Padronização e deduplicação dos dados processuais capturados
                       </span>
                     </li>
                   </ul>
@@ -360,7 +438,7 @@ export default function SolucoesPage() {
                 Pronto para Transformar sua Organização?
               </h2>
               <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-                Entre em contato e descubra como nossas soluções podem impulsionar a inovação e
+                Fale com a gente e descubra como nossas soluções podem impulsionar a inovação e a
                 eficiência da sua empresa
               </p>
               <Button size="lg" asChild>
