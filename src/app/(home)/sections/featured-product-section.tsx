@@ -1,12 +1,4 @@
-import {
-  ChevronRight,
-  Database,
-  FileText,
-  Lock,
-  MessageSquare,
-  Shield,
-  Sparkles,
-} from "lucide-react";
+import { Bot, ChevronRight, Database, Lock, MessageSquare, Shield, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -19,10 +11,10 @@ export function FeaturedProductSection() {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="space-y-6">
             <Badge>Produto Destaque</Badge>
-            <h2 className="font-bold text-3xl md:text-4xl">Plataforma de LabsChat Corporativo</h2>
+            <h2 className="font-bold text-3xl md:text-4xl">LabsChat.Ai</h2>
             <p className="text-lg text-muted-foreground">
-              Solução avançada de IA generativa para uso corporativo, com foco absoluto em
-              segurança, confidencialidade e soberania dos dados.
+              Plataforma de IA generativa para uso corporativo, com foco absoluto em segurança,
+              confidencialidade e soberania dos dados.
             </p>
 
             <div className="space-y-4 pt-4">
@@ -33,7 +25,7 @@ export function FeaturedProductSection() {
                 <div>
                   <h3 className="mb-1 font-semibold">Segurança Contratual</h3>
                   <p className="text-muted-foreground text-sm">
-                    Seus dados nunca são usados para treinamento de modelos externos
+                    Seus dados nunca alimentam o treinamento de modelos externos
                   </p>
                 </div>
               </div>
@@ -57,7 +49,7 @@ export function FeaturedProductSection() {
                 <div>
                   <h3 className="mb-1 font-semibold">White-Label</h3>
                   <p className="text-muted-foreground text-sm">
-                    Customização completa com sua identidade visual
+                    Personalização completa com a identidade visual da sua marca
                   </p>
                 </div>
               </div>
@@ -75,7 +67,7 @@ export function FeaturedProductSection() {
             <Card className="border-2">
               <CardHeader>
                 <div className="mb-4 flex items-center justify-between">
-                  <Badge variant="secondary">Prompt.Labs</Badge>
+                  <Badge variant="secondary">LabsChat.Ai</Badge>
                   <div className="flex gap-2">
                     <div className="h-3 w-3 rounded-full bg-red-500" />
                     <div className="h-3 w-3 rounded-full bg-yellow-500" />
@@ -90,7 +82,7 @@ export function FeaturedProductSection() {
                     <div className="flex-1 space-y-1">
                       <p className="font-medium text-sm">Múltiplos Modelos LLM</p>
                       <p className="text-muted-foreground text-xs">
-                        GPT, Gemini, Claude integrados
+                        GPT, Gemini, Claude, Grok e mais
                       </p>
                     </div>
                   </div>
@@ -98,11 +90,11 @@ export function FeaturedProductSection() {
 
                 <div className="space-y-3 rounded-lg bg-muted p-4">
                   <div className="flex items-start gap-3">
-                    <FileText className="mt-1 h-5 w-5 text-primary" />
+                    <Bot className="mt-1 h-5 w-5 text-primary" />
                     <div className="flex-1 space-y-1">
-                      <p className="font-medium text-sm">Biblioteca de Prompts</p>
+                      <p className="font-medium text-sm">Agentes & Prompt.Labs</p>
                       <p className="text-muted-foreground text-xs">
-                        Organize e reutilize seus prompts
+                        Agentes próprios e o Prompt.Labs, que ajuda a escrever prompts melhores
                       </p>
                     </div>
                   </div>
@@ -113,7 +105,9 @@ export function FeaturedProductSection() {
                     <Lock className="mt-1 h-5 w-5 text-primary" />
                     <div className="flex-1 space-y-1">
                       <p className="font-medium text-sm">Ambiente Privado</p>
-                      <p className="text-muted-foreground text-xs">Total controle e privacidade</p>
+                      <p className="text-muted-foreground text-xs">
+                        Controle e privacidade totais sobre suas informações
+                      </p>
                     </div>
                   </div>
                 </div>

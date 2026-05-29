@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { AboutSection } from "./sections/about-section";
+import { CasesSection } from "./sections/cases-section";
 import { CTASection } from "./sections/cta-section";
 import { DifferentialsSection } from "./sections/differentials-section";
 import { FeaturedProductSection } from "./sections/featured-product-section";
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <FeaturedProductSection />
+      <CasesSection />
       <Separator />
       <AboutSection />
       <DifferentialsSection />

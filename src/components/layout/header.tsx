@@ -35,6 +35,9 @@ export function Header() {
           >
             Soluções
           </Link>
+          <Link href="/#cases" className="font-medium text-sm transition-colors hover:text-primary">
+            Cases
+          </Link>
           <Link href="/#sobre" className="font-medium text-sm transition-colors hover:text-primary">
             Sobre
           </Link>
@@ -69,6 +72,13 @@ export function Header() {
                   onClick={() => setOpen(false)}
                 >
                   Soluções
+                </Link>
+                <Link
+                  href="/#cases"
+                  className="py-2 font-medium text-base transition-colors hover:text-primary"
+                  onClick={() => setOpen(false)}
+                >
+                  Cases
                 </Link>
                 <Link
                   href="/#sobre"
