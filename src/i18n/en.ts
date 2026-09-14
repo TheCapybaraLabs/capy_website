@@ -202,6 +202,159 @@ export const en: Dict = {
     body: "Get in touch and find out how Capybara Labs can drive innovation and efficiency in your company with AI",
     button: "Talk to Our Team",
   },
+  solutions: {
+    meta: {
+      title: "Solutions",
+      description:
+        "Three lines of work: SaaS platforms, AI consulting and custom development. Built for organisations that need AI to hold up in production.",
+      keywords: [
+        "SaaS platforms",
+        "LabsChat.Ai",
+        "white-label AI chat",
+        "AI consulting",
+        "custom software development",
+      ],
+    },
+    hero: {
+      badge: "Our Services and Solutions",
+      titleLead: "Three Lines of",
+      titleAccent: "Work",
+      subtitle:
+        "We organize around three strategic fronts to change how organizations relate to technology",
+    },
+    saas: {
+      heading: "1. SaaS Platforms",
+      subtitle: "Robust, ready-to-use products designed to let you innovate safely",
+      featured: {
+        badge: "Featured Product",
+        title: "LabsChat.Ai (White-Label)",
+        description:
+          "A generative AI platform built around security, confidentiality and data sovereignty",
+        body: "It brings generative AI inside your organization in a controlled, private environment, aligned with LGPD — Brazil's data protection law, closely modeled on the GDPR.",
+        securityHeading: "Security and Privacy",
+        security: [
+          {
+            title: "Contractual Confidentiality",
+            description: "No interaction is ever used to train external models",
+          },
+          {
+            title: "Data Sovereignty",
+            description: "Hosted entirely on servers located in Brazil",
+          },
+          {
+            title: "LGPD Compliance",
+            description: "Fully aligned with Brazilian data protection law",
+          },
+        ],
+        featuresHeading: "Advanced Capabilities",
+        features: [
+          { label: "White-Label:", text: " Fully themed to the client's own visual identity" },
+          { label: "Multiple LLMs:", text: " GPT, Gemini, Claude and other frontier models" },
+          {
+            label: "Intelligent Agents:",
+            text: " Automate workflows and encode your own methods into the platform",
+          },
+          {
+            label: "Prompt.Labs:",
+            text: " Our own agent that helps users write better prompts",
+          },
+          {
+            label: "Managed Solution:",
+            text: " Licensing, support and infrastructure, all included",
+          },
+        ],
+      },
+      infra: {
+        title: "Managed Infrastructure",
+        description: "We run the whole operation so you can focus on your business",
+        items: [
+          {
+            title: "Hosted in Brazil",
+            description: "Servers located in Brazil, compliant with LGPD",
+          },
+          {
+            title: "Per-Client Isolation",
+            description: "Each organization runs in its own segregated environment",
+          },
+          {
+            title: "Automatic Backups",
+            description: "Scheduled backup and recovery routines for your data",
+          },
+          {
+            title: "Continuous Monitoring",
+            description: "Availability and performance tracked around the clock",
+          },
+        ],
+      },
+    },
+    consulting: {
+      heading: "2. AI Consulting and Technical Training",
+      subtitle: "Hands-on, interactive training focused on outcomes you can measure",
+      cardTitle: "Practical and Tailored",
+      cardDescription:
+        "Training centered on AI tools that apply directly to everyday administrative work",
+      areasHeading: "Where It Applies",
+      areas: [
+        "Drafting official letters and reports",
+        "Sharpening emails and presentations",
+        "Automating administrative processes",
+        "Best practices for working with AI",
+      ],
+      commitmentHeading: "What We Commit To",
+      commitment: [
+        "Ongoing follow-up with your teams",
+        "Regular technical support",
+        "Continuous updates",
+        "Building a lasting culture of innovation",
+      ],
+    },
+    development: {
+      heading: "3. Custom Software Development",
+      subtitle: "Tailored platforms for business problems that have no off-the-shelf answer",
+      cardTitle: "Solving the Problem, Not Just Shipping Code",
+      cardDescription:
+        "Unique challenges need unique solutions. We build business-critical tools that fit into your existing processes",
+      methodologyHeading: "How We Work",
+      steps: [
+        {
+          title: "1. Deep Analysis",
+          description: "We study the client's full operational workflow",
+        },
+        {
+          title: "2. Custom Build",
+          description: "We build solutions that integrate cleanly",
+        },
+        { title: "3. Ongoing Support", description: "Continuous follow-up and evolution" },
+      ],
+      billing: {
+        title: "In Practice: A Contribution Billing Platform",
+        body: "A complete platform for managing and automating membership billing, currently in active development:",
+        items: [
+          "Automatic issuing of boletos, Brazil's standard bank-slip payment method",
+          "Direct bank integration (Sicoob, a Brazilian banking cooperative, among others)",
+          "Management dashboards",
+          "Integrated document management",
+          "Automated email reminders",
+          "Process management modules",
+        ],
+      },
+      legal: {
+        title: "In Practice: Automation for Law Firms",
+        body: "Automation that finds and tracks cases across multiple Brazilian court systems:",
+        items: [
+          "Case lookup by taxpayer ID (CPF or CNPJ) or bar registration number (OAB), via RPA",
+          "Coverage of many separate court systems from a single place",
+          "Automatic tracking of new filings and case movements",
+          "Normalization and deduplication of the case data collected",
+        ],
+      },
+    },
+    cta: {
+      title: "Ready to Transform Your Organization?",
+      body: "Talk to us and find out how our solutions can drive innovation and efficiency in your company",
+      button: "Talk to Our Team",
+    },
+  },
   footer: {
     tagline: "Transforming organizations with artificial intelligence and modern engineering.",
     solutionsHeading: "Solutions",

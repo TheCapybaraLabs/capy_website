@@ -191,6 +191,162 @@ export const pt: Dict = {
     body: "Entre em contato e descubra como a Capybara Labs pode impulsionar a inovação e eficiência da sua empresa com IA",
     button: "Fale com Nossos Especialistas",
   },
+  solutions: {
+    meta: {
+      title: "Soluções",
+      description:
+        "Três pilares de excelência: Plataformas SaaS, Consultoria em IA e Desenvolvimento Sob Medida. Transforme sua organização com soluções inovadoras.",
+      keywords: [
+        "plataformas SaaS",
+        "LabsChat.Ai",
+        "white-label",
+        "consultoria IA",
+        "desenvolvimento sob medida",
+      ],
+    },
+    hero: {
+      badge: "Nossos Serviços e Soluções",
+      titleLead: "Três Pilares de",
+      titleAccent: "Excelência",
+      subtitle:
+        "Estruturamos nossa atuação em três frentes estratégicas para transformar a relação das organizações com a tecnologia",
+    },
+    saas: {
+      heading: "1. Plataformas SaaS (Software como Serviço)",
+      subtitle: "Produtos robustos e prontos para uso, projetados para inovar com segurança",
+      featured: {
+        badge: "Produto Destaque",
+        title: "LabsChat.Ai (White-Label)",
+        description:
+          "Plataforma de IA generativa com foco absoluto em segurança, confidencialidade e soberania dos dados",
+        body: "Leva o poder da IA generativa para dentro da sua organização em um ambiente controlado, privado e alinhado à legislação brasileira (LGPD).",
+        securityHeading: "Segurança e Privacidade",
+        security: [
+          {
+            title: "Confidencialidade Contratual",
+            description: "Nenhuma interação é usada para treinar modelos externos",
+          },
+          {
+            title: "Soberania de Dados",
+            description: "Hospedagem 100% nacional em servidores no Brasil",
+          },
+          {
+            title: "Conformidade LGPD",
+            description: "Totalmente alinhado à legislação brasileira de proteção de dados",
+          },
+        ],
+        featuresHeading: "Recursos Avançados",
+        features: [
+          {
+            label: "White-Label:",
+            text: " Customização completa com identidade visual do cliente",
+          },
+          { label: "Múltiplos LLMs:", text: " GPT, Gemini, Claude e outros modelos avançados" },
+          {
+            label: "Agentes Inteligentes:",
+            text: " Automatize fluxos e incorpore métodos próprios à plataforma",
+          },
+          {
+            label: "Prompt.Labs:",
+            text: " Agente proprietário que ajuda usuários a construir prompts melhores",
+          },
+          {
+            label: "Solução Gerenciada:",
+            text: " Licenciamento, suporte e infraestrutura, tudo incluso",
+          },
+        ],
+      },
+      infra: {
+        title: "Infraestrutura Gerenciada",
+        description: "Cuidamos de toda a operação para que você foque no seu negócio",
+        items: [
+          {
+            title: "Hospedagem Nacional",
+            description: "Servidores no Brasil, em conformidade com a LGPD",
+          },
+          {
+            title: "Isolamento por Cliente",
+            description: "Cada organização opera em um ambiente próprio e segregado",
+          },
+          {
+            title: "Backups Automáticos",
+            description: "Rotinas automáticas de backup e recuperação dos seus dados",
+          },
+          {
+            title: "Monitoramento Contínuo",
+            description: "Acompanhamento de disponibilidade e desempenho",
+          },
+        ],
+      },
+    },
+    consulting: {
+      heading: "2. Consultoria e Capacitação Técnica em IA",
+      subtitle: "Treinamentos práticos e interativos focados em resultados tangíveis",
+      cardTitle: "Abordagem Prática e Personalizada",
+      cardDescription:
+        "Treinamentos voltados para o uso de ferramentas de Inteligência Artificial aplicáveis a processos administrativos",
+      areasHeading: "Áreas de Aplicação",
+      areas: [
+        "Elaboração de ofícios e relatórios",
+        "Otimização de e-mails e apresentações",
+        "Automação de processos administrativos",
+        "Melhores práticas no uso de IA",
+      ],
+      commitmentHeading: "Nosso Compromisso",
+      commitment: [
+        "Acompanhamento contínuo das equipes",
+        "Suporte técnico regular",
+        "Atualizações constantes",
+        "Consolidação de cultura de inovação",
+      ],
+    },
+    development: {
+      heading: "3. Desenvolvimento de Soluções Sob Medida",
+      subtitle: "Plataformas customizadas que resolvem desafios únicos de negócio",
+      cardTitle: "Foco em Resolver o Problema, Não Apenas Entregar Código",
+      cardDescription:
+        "Desafios únicos exigem soluções únicas. Desenvolvemos ferramentas de missão crítica integradas aos seus processos",
+      methodologyHeading: "Nossa Metodologia",
+      steps: [
+        {
+          title: "1. Análise Profunda",
+          description: "Estudamos o fluxo operacional completo do cliente",
+        },
+        {
+          title: "2. Desenvolvimento Customizado",
+          description: "Construímos soluções perfeitamente integradas",
+        },
+        { title: "3. Suporte Contínuo", description: "Acompanhamento e evolução constante" },
+      ],
+      billing: {
+        title: "Exemplo de Atuação: Plataforma de Gestão de Cobranças",
+        body: "Plataforma completa para gerenciamento e automação de cobrança de contribuições, atualmente em desenvolvimento ativo:",
+        items: [
+          "Emissão automática de boletos",
+          "Integração bancária direta (ex: Sicoob)",
+          "Dashboards gerenciais",
+          "Gestão documental integrada",
+          "Automação de lembretes por e-mail",
+          "Módulos de gestão de processos",
+        ],
+      },
+      legal: {
+        title: "Exemplo de Atuação: Automações para Escritórios de Advocacia",
+        body: "Automações que localizam e acompanham processos automaticamente em múltiplos sistemas de tribunais:",
+        items: [
+          "Localização de processos por CPF, CNPJ ou OAB via RPA",
+          "Cobertura de múltiplos sistemas de tribunais em um só lugar",
+          "Acompanhamento automático de novas movimentações processuais",
+          "Padronização e deduplicação dos dados processuais capturados",
+        ],
+      },
+    },
+    cta: {
+      title: "Pronto para Transformar sua Organização?",
+      body: "Fale com a gente e descubra como nossas soluções podem impulsionar a inovação e a eficiência da sua empresa",
+      button: "Fale com Nossos Especialistas",
+    },
+  },
   footer: {
     tagline: "Transformando organizações com Inteligência Artificial e tecnologia de ponta.",
     solutionsHeading: "Soluções",
