@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
+import { LanguageSelector } from "@/components/ui/language-selector-dropdown";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { CONTACT_EMAIL, LOGO_IMAGE_PATH } from "@/constants/config";
 
@@ -47,6 +48,7 @@ export function Header() {
           >
             Diferenciais
           </Link>
+          <LanguageSelector />
           <ModeToggle />
           <Button size="sm" asChild>
             <a href={`mailto:${CONTACT_EMAIL}`}>Entre em Contato</a>
@@ -55,6 +57,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         <div className="flex items-center gap-2 md:hidden">
+          <LanguageSelector compact />
           <ModeToggle />
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
