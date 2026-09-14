@@ -1,22 +1,11 @@
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { DataConsentModal } from "@/components/data-consent-modal";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
-import { ThemeProvider } from "@/components/theme-provider";
-import "./globals.css";
-import { Geist } from "next/font/google";
+import { RootShell } from "@/components/layout/root-shell";
 import { SITE_URL } from "@/constants/config";
-import { cn } from "@/lib/utils";
-
-const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
-
-interface RootLayoutProps {
-  children: React.ReactNode;
-}
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Capybara Labs - Transformando Organizações com IA",
     template: "%s | Capybara Labs",
@@ -43,13 +32,18 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: "/",
+    languages: {
+      "pt-BR": "/",
+      en: "/en",
+      "x-default": "/",
+    },
   },
   openGraph: {
     type: "website",
     locale: "pt_BR",
+    alternateLocale: "en_US",
     url: "/",
     title: "Capybara Labs - Transformando Organizações com IA",
     description:
@@ -77,25 +71,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function PtLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning className={cn("font-sans", geist.variable)}>
-      <head />
-      <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          {children}
-          <Footer />
-          <DataConsentModal />
-          <Analytics />
-          <SpeedInsights />
-        </ThemeProvider>
-      </body>
-    </html>
+    <RootShell lang="pt-BR">
+      <Header />
+      {children}
+      <Footer />
+    </RootShell>
   );
 }

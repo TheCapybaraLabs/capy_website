@@ -32,6 +32,14 @@ export const metadata: Metadata = {
     "consultoria IA",
     "desenvolvimento sob medida",
   ],
+  alternates: {
+    canonical: "/solucoes",
+    languages: {
+      "pt-BR": "/solucoes",
+      en: "/en/solutions",
+      "x-default": "/solucoes",
+    },
+  },
 };
 
 export default function SolucoesPage() {

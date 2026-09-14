@@ -24,6 +24,7 @@ export async function generateMetadata({
     description: `Termos de Uso da Plataforma ${client.name}.`,
     keywords: ["termos de uso", client.shortName, "Plataforma Chat IA", "Capybara Labs"],
     robots: { index: false, follow: true },
+    alternates: { canonical: `/termos/${slug}` },
   };
 }
 

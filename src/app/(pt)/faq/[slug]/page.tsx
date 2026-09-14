@@ -22,6 +22,7 @@ export async function generateMetadata({
     description: `Perguntas frequentes sobre o ${client.name}.`,
     keywords: ["faq", client.name, client.shortName, "Chat IA", "Capybara Labs"],
     robots: { index: false, follow: true },
+    alternates: { canonical: `/faq/${slug}` },
   };
 }
 

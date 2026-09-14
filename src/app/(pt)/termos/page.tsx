@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     "Termos e condições de uso dos serviços da Capybara Labs. Leia nossos termos antes de utilizar nossas soluções.",
   keywords: ["termos de serviço", "condições de uso", "contrato", "termos legais", "LabsChat"],
   robots: { index: false, follow: true },
+  // Substitui o alternates do layout: estas páginas só existem em pt-BR,
+  // e anunciar hreflang para /en aqui seria falso.
+  alternates: { canonical: "/termos" },
 };
 
 export default function TermsPage() {

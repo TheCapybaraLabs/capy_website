@@ -24,6 +24,7 @@ export async function generateMetadata({
     description: `Política de Privacidade da Plataforma ${client.name}.`,
     keywords: ["privacidade", client.shortName, "Chat IA", "LGPD", "Capybara Labs"],
     robots: { index: false, follow: true },
+    alternates: { canonical: `/privacidade/${slug}` },
   };
 }
 

@@ -14,6 +14,8 @@ export const metadata: Metadata = {
     "política de privacidade",
   ],
   robots: { index: false, follow: true },
+  // Ver nota em termos/page.tsx: sem hreflang, só existe em pt-BR.
+  alternates: { canonical: "/privacidade" },
 };
 
 export default function PrivacyPage() {
