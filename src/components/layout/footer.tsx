@@ -2,8 +2,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { CONTACT_EMAIL, LOGO_IMAGE_PATH } from "@/constants/config";
+import { type Dict, getLinks, type Locale } from "@/i18n";
 
-export function Footer() {
+type FooterProps = {
+  locale: Locale;
+  dict: Dict;
+};
+
+export function Footer({ locale, dict }: FooterProps) {
+  const links = getLinks(locale, dict);
+
+  const solutionLinks = [
+    { href: links.saas, label: dict.footer.saas },
+    { href: links.consulting, label: dict.footer.consulting },
+    { href: links.development, label: dict.footer.development },
+  ];
+
+  const companyLinks = [
+    { href: links.about, label: dict.footer.about },
+    { href: links.cases, label: dict.footer.cases },
+  ];
+
   return (
     <footer className="border-t bg-muted/30 py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -19,61 +38,37 @@ export function Footer() {
               />
               <span className="font-bold text-lg">Capybara Labs</span>
             </div>
-            <p className="text-muted-foreground text-sm">
-              Transformando organizações com Inteligência Artificial e tecnologia de ponta.
-            </p>
+            <p className="text-muted-foreground text-sm">{dict.footer.tagline}</p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="font-semibold">Soluções</h3>
+            <h3 className="font-semibold">{dict.footer.solutionsHeading}</h3>
             <ul className="space-y-2 text-muted-foreground text-sm">
-              <li>
-                <Link href="/solucoes#saas" className="transition-colors hover:text-foreground">
-                  Plataformas SaaS
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/solucoes#consultoria"
-                  className="transition-colors hover:text-foreground"
-                >
-                  Consultoria e Capacitação
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/solucoes#desenvolvimento"
-                  className="transition-colors hover:text-foreground"
-                >
-                  Desenvolvimento Sob Medida
-                </Link>
-              </li>
+              {solutionLinks.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="transition-colors hover:text-foreground">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div className="space-y-4">
-            <h3 className="font-semibold">Empresa</h3>
+            <h3 className="font-semibold">{dict.footer.companyHeading}</h3>
             <ul className="space-y-2 text-muted-foreground text-sm">
-              <li>
-                <Link href="/#sobre" className="transition-colors hover:text-foreground">
-                  Sobre Nós
-                </Link>
-              </li>
-              <li>
-                <Link href="/#cases" className="transition-colors hover:text-foreground">
-                  Cases
-                </Link>
-              </li>
-              <li>
-                <Link href="/equipe" className="transition-colors hover:text-foreground">
-                  Equipe
-                </Link>
-              </li>
+              {companyLinks.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="transition-colors hover:text-foreground">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div className="space-y-4">
-            <h3 className="font-semibold">Contato</h3>
+            <h3 className="font-semibold">{dict.footer.contactHeading}</h3>
             <ul className="space-y-2 text-muted-foreground text-sm">
               <li>
                 <a
@@ -83,7 +78,7 @@ export function Footer() {
                   {CONTACT_EMAIL}
                 </a>
               </li>
-              <li>Piauí, Brasil</li>
+              <li>{dict.footer.location}</li>
             </ul>
           </div>
         </div>
@@ -91,13 +86,25 @@ export function Footer() {
         <Separator className="my-8" />
 
         <div className="flex flex-col items-center justify-between gap-4 text-muted-foreground text-sm md:flex-row">
-          <p>© 2024-{new Date().getFullYear()} Capybara Labs. Todos os direitos reservados.</p>
+          <p>
+            © 2024-{new Date().getFullYear()} Capybara Labs. {dict.footer.rights}
+          </p>
+          {/* Os documentos legais só existem em pt-BR; hrefLang avisa o leitor
+              em inglês de que o link muda de idioma. */}
           <div className="flex gap-6">
-            <Link href="/privacidade" className="transition-colors hover:text-foreground">
-              Privacidade
+            <Link
+              href={links.privacy}
+              hrefLang="pt-BR"
+              className="transition-colors hover:text-foreground"
+            >
+              {dict.footer.privacy}
             </Link>
-            <Link href="/termos" className="transition-colors hover:text-foreground">
-              Termos
+            <Link
+              href={links.terms}
+              hrefLang="pt-BR"
+              className="transition-colors hover:text-foreground"
+            >
+              {dict.footer.terms}
             </Link>
           </div>
         </div>
