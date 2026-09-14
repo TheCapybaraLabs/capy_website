@@ -64,11 +64,6 @@ export function Footer() {
                   Cases
                 </Link>
               </li>
-              <li>
-                <Link href="/equipe" className="transition-colors hover:text-foreground">
-                  Equipe
-                </Link>
-              </li>
             </ul>
           </div>
 

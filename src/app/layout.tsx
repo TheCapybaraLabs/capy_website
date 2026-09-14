@@ -7,6 +7,7 @@ import { Header } from "@/components/layout/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import { Geist } from "next/font/google";
+import { SITE_URL } from "@/constants/config";
 import { cn } from "@/lib/utils";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"),
+  metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: "/",
   },
