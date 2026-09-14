@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { RootShell } from "@/components/layout/root-shell";
 import { SITE_URL } from "@/constants/config";
+import { getDictionary, getLinks } from "@/i18n";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -71,11 +72,13 @@ export const metadata: Metadata = {
 };
 
 export default function EnLayout({ children }: { children: React.ReactNode }) {
+  const dict = getDictionary("en");
+
   return (
-    <RootShell lang="en">
-      <Header />
+    <RootShell locale="en">
+      <Header nav={dict.nav} links={getLinks("en", dict)} />
       {children}
-      <Footer />
+      <Footer locale="en" dict={dict} />
     </RootShell>
   );
 }

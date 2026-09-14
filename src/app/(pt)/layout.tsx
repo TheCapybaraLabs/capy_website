@@ -3,6 +3,7 @@ import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { RootShell } from "@/components/layout/root-shell";
 import { SITE_URL } from "@/constants/config";
+import { getDictionary, getLinks } from "@/i18n";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -72,11 +73,13 @@ export const metadata: Metadata = {
 };
 
 export default function PtLayout({ children }: { children: React.ReactNode }) {
+  const dict = getDictionary("pt-BR");
+
   return (
-    <RootShell lang="pt-BR">
-      <Header />
+    <RootShell locale="pt-BR">
+      <Header nav={dict.nav} links={getLinks("pt-BR", dict)} />
       {children}
-      <Footer />
+      <Footer locale="pt-BR" dict={dict} />
     </RootShell>
   );
 }

@@ -4,9 +4,8 @@ import { Check, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
+import { getAlternate, getLocale, type Locale } from "@/i18n";
 import { cn } from "@/lib/utils";
-
-export type Locale = "pt-BR" | "en";
 
 type Language = {
   code: Locale;
@@ -18,28 +17,6 @@ const LANGUAGES: Language[] = [
   { code: "pt-BR", label: "Português (BR)", flag: "🇧🇷" },
   { code: "en", label: "English", flag: "🇺🇸" },
 ];
-
-/**
- * Rotas que existem nos dois idiomas. Qualquer caminho fora deste mapa
- * (jurídico, FAQ) cai na home do idioma de destino.
- */
-const PT_TO_EN: Record<string, string> = {
-  "/": "/en",
-  "/solucoes": "/en/solutions",
-};
-
-const EN_TO_PT: Record<string, string> = Object.fromEntries(
-  Object.entries(PT_TO_EN).map(([pt, en]) => [en, pt]),
-);
-
-function getLocale(pathname: string): Locale {
-  return pathname === "/en" || pathname.startsWith("/en/") ? "en" : "pt-BR";
-}
-
-function getHref(pathname: string, target: Locale): string {
-  if (getLocale(pathname) === target) return pathname;
-  return target === "en" ? (PT_TO_EN[pathname] ?? "/en") : (EN_TO_PT[pathname] ?? "/");
-}
 
 type LanguageSelectorProps = {
   /** Oculta o rótulo, deixando bandeira e seta. Para o header mobile. */
@@ -113,7 +90,7 @@ export function LanguageSelector({ compact = false, className }: LanguageSelecto
             return (
               <li key={lang.code}>
                 <Link
-                  href={getHref(pathname, lang.code)}
+                  href={getAlternate(pathname, lang.code)}
                   hrefLang={lang.code}
                   onClick={() => setOpen(false)}
                   aria-current={isActive ? "true" : undefined}

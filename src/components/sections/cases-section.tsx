@@ -1,59 +1,28 @@
-import type { LucideIcon } from "lucide-react";
 import { Bot, GraduationCap, Users } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import type { Dict } from "@/i18n";
 
-type Case = {
-  icon: LucideIcon;
-  partner: string;
-  title: string;
-  description: string;
-  tag: string;
+const ICONS = [Bot, Users, GraduationCap] as const;
+
+type CasesSectionProps = {
+  t: Dict["cases"];
+  id: string;
 };
 
-const cases: Case[] = [
-  {
-    icon: Bot,
-    partner: "JA Piauí",
-    title: "Metodologia de empreendedorismo em agentes",
-    description:
-      "Transformamos a metodologia de empreendedorismo da JA em agentes dentro do LabsChat.Ai e conduzimos a capacitação CIEE + JA diretamente na plataforma.",
-    tag: "Educação",
-  },
-  {
-    icon: Users,
-    partner: "IDB Start · JA + IDB",
-    title: "Jovens criando jogos com IA",
-    description:
-      "No evento IDB Start, conduzimos um workshop em que jovens usaram Inteligência Artificial para criar seus próprios jogos educativos.",
-    tag: "Workshop",
-  },
-  {
-    icon: GraduationCap,
-    partner: "TheCodeAcademy",
-    title: "Parceria em formação técnica",
-    description:
-      "Parceria com escola de programação de Teresina-PI, cujo professor titular também conduz capacitações para os nossos clientes.",
-    tag: "Parceria",
-  },
-];
-
-export function CasesSection() {
+export function CasesSection({ t, id }: CasesSectionProps) {
   return (
-    <section id="cases" className="bg-muted/50 py-24">
+    <section id={id} className="bg-muted/50 py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-16 space-y-4 text-center">
-          <Badge variant="outline">LabsChat.Ai em Ação</Badge>
-          <h2 className="font-bold text-3xl md:text-4xl">Tecnologia que Transforma Pessoas</h2>
-          <p className="mx-auto max-w-2xl text-muted-foreground">
-            Levamos IA generativa à educação e à formação, ao lado de instituições que acreditam no
-            poder da tecnologia para mudar trajetórias
-          </p>
+          <Badge variant="outline">{t.badge}</Badge>
+          <h2 className="font-bold text-3xl md:text-4xl">{t.title}</h2>
+          <p className="mx-auto max-w-2xl text-muted-foreground">{t.subtitle}</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-3">
-          {cases.map((item) => {
-            const Icon = item.icon;
+          {t.items.map((item, index) => {
+            const Icon = ICONS[index];
             return (
               <Card
                 key={item.partner}
