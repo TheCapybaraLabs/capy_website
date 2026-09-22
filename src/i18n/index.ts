@@ -27,6 +27,7 @@ export function getDictionary(locale: Locale): Dict {
 export const PT_TO_EN: Record<string, string> = {
   "/": "/en",
   "/solucoes": "/en/solutions",
+  "/labschat": "/en/labschat",
 };
 
 export const EN_TO_PT: Record<string, string> = Object.fromEntries(
@@ -50,10 +51,12 @@ export function getAlternate(pathname: string, target: Locale): string {
 export function getLinks(locale: Locale, dict: Dict) {
   const home = locale === "en" ? "/en" : "/";
   const solutions = locale === "en" ? "/en/solutions" : "/solucoes";
+  const labschat = locale === "en" ? "/en/labschat" : "/labschat";
 
   return {
     home,
     solutions,
+    labschat,
     cases: `${home}#${dict.anchors.cases}`,
     about: `${home}#${dict.anchors.about}`,
     differentials: `${home}#${dict.anchors.differentials}`,

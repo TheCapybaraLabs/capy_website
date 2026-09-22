@@ -15,6 +15,7 @@ export const pt: Dict = {
     cases: "Cases",
     about: "Sobre",
     differentials: "Diferenciais",
+    labschat: "LabsChat.Ai",
     contact: "Entre em Contato",
     menuTitle: "Menu de Navegação",
     toggleMenu: "Abrir menu",
@@ -345,6 +346,101 @@ export const pt: Dict = {
       title: "Pronto para Transformar sua Organização?",
       body: "Fale com a gente e descubra como nossas soluções podem impulsionar a inovação e a eficiência da sua empresa",
       button: "Fale com Nossos Especialistas",
+    },
+  },
+  labschatPage: {
+    meta: {
+      title: "LabsChat.Ai — Plataforma de IA Corporativa",
+      description:
+        "Inteligência artificial segura e personalizada, pronta para a sua instituição. Múltiplos modelos, white-label total e dados hospedados no Brasil.",
+      keywords: [
+        "LabsChat.Ai",
+        "plataforma de IA corporativa",
+        "chat com inteligência artificial",
+        "white-label",
+        "LGPD",
+        "GPT",
+        "Gemini",
+        "Claude",
+        "Capybara Labs",
+      ],
+    },
+    nav: {
+      docs: "Documentação",
+    },
+    hero: {
+      badge: "Plataforma de IA Corporativa",
+      titleLead: "Inteligência artificial segura e personalizada.",
+      titleAccent: "Pronta para a sua instituição.",
+      subtitle:
+        "O LabsChat.Ai reúne múltiplos modelos, agentes e controle total em uma plataforma corporativa com a sua marca — hospedada no Brasil, sob suas regras.",
+      ctaPrimary: "Falar com o time",
+      ctaSecondary: "Ver recursos",
+    },
+    features: {
+      heading: "Tudo em uma única plataforma",
+      items: [
+        {
+          title: "Múltiplos modelos, um só lugar",
+          description:
+            "GPT, Gemini, Claude e mais — sem trocar de ferramenta nem pagar por assinaturas separadas.",
+        },
+        {
+          title: "White-label total",
+          description:
+            "Nome, logo e identidade da sua instituição em toda a plataforma. Não é o LabsChat — é o seu Chat.",
+        },
+        {
+          title: "Agentes e prompts sob medida",
+          description:
+            "Biblioteca de agentes prontos pra sua equipe e o Labs.Prompt, seu assistente pessoal pra criar o prompt perfeito.",
+        },
+        {
+          title: "Soberania e privacidade de dados",
+          description:
+            "Dados hospedados no Brasil, em servidor dedicado por cliente. Nenhuma interação treina modelos externos.",
+        },
+      ],
+    },
+    showcase: {
+      heading: "Do login ao agente, com a cara da sua instituição",
+      subheading:
+        "As telas abaixo são de clientes reais em operação — a mesma plataforma, cada uma com sua marca.",
+      items: [
+        {
+          eyebrow: "White-label total",
+          title: "Não é o LabsChat — é o seu Chat",
+          description:
+            "Nome, logo, cores e ilustrações da sua instituição em toda a plataforma, do login à última tela. Seus usuários entram em algo que já reconhecem.",
+          imageAlt: "Tela de login do Chat Grupo Ativa, com a marca ativa.ai",
+        },
+        {
+          eyebrow: "Domínio e servidor próprios",
+          title: "Seu endereço, seu servidor, no Brasil",
+          description:
+            "Cada cliente recebe o próprio subdomínio e uma instância dedicada. Dados hospedados em território nacional, sem cruzamento entre instituições e sem treinar modelos externos.",
+          imageAlt: "Tela de login do JA Chat, no endereço ja.labschat.ai",
+        },
+        {
+          eyebrow: "Marketplace de Agentes",
+          title: "Os agentes da sua equipe, em um só lugar",
+          description:
+            "Biblioteca de agentes organizados por área — RH, Financeiro, Jurídico, Educação e mais — além do Labs.Prompts, o assistente que ajuda a escrever o prompt perfeito.",
+          imageAlt: "Marketplace de Agentes do LabsChat.Ai, com agentes por categoria",
+        },
+      ],
+    },
+    partners: {
+      heading: "Já em operação em instituições como",
+    },
+    contactOptions: {
+      email: "E-mail",
+      whatsapp: "WhatsApp",
+      whatsappMessage: "Olá! Vim pelo site do LabsChat.Ai e quero saber mais.",
+    },
+    cta: {
+      body: "Sua instituição merece uma IA que respeita seus dados, veste sua camisa e cresce junto com sua equipe.",
+      button: "Falar com o time",
     },
   },
   footer: {

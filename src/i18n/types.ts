@@ -43,6 +43,7 @@ export type Dict = {
     cases: string;
     about: string;
     differentials: string;
+    labschat: string;
     contact: string;
     /** Rótulos apenas para leitor de tela. */
     menuTitle: string;
@@ -174,6 +175,58 @@ export type Dict = {
     };
     cta: {
       title: string;
+      body: string;
+      button: string;
+    };
+  };
+  /**
+   * Landing imersiva do produto (/labschat, /en/labschat). Vive fora do
+   * chrome padrão do site (sem Header/Footer) e por isso carrega sua própria
+   * meta, em vez de reaproveitar o layout de `solutions`.
+   */
+  labschatPage: {
+    meta: {
+      title: string;
+      description: string;
+      keywords: string[];
+    };
+    nav: {
+      docs: string;
+    };
+    hero: {
+      badge: string;
+      titleLead: string;
+      titleAccent: string;
+      subtitle: string;
+      ctaPrimary: string;
+      ctaSecondary: string;
+    };
+    features: {
+      heading: string;
+      items: Quad<TitledItem>;
+    };
+    /** Cards empilhados com as telas reais da plataforma. */
+    showcase: {
+      heading: string;
+      subheading: string;
+      items: Triple<{
+        eyebrow: string;
+        title: string;
+        description: string;
+        imageAlt: string;
+      }>;
+    };
+    partners: {
+      heading: string;
+    };
+    /** Rótulos dos dois canais revelados ao clicar em "Falar com o time". */
+    contactOptions: {
+      email: string;
+      whatsapp: string;
+      /** Mensagem pré-preenchida no link wa.me. */
+      whatsappMessage: string;
+    };
+    cta: {
       body: string;
       button: string;
     };

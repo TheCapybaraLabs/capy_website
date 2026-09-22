@@ -1,8 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Separator } from "@/components/ui/separator";
 import { CONTACT_EMAIL, LOGO_IMAGE_PATH } from "@/constants/config";
 import { type Dict, getLinks, type Locale } from "@/i18n";
+import { isImmersivePath } from "@/lib/immersive-routes";
 
 type FooterProps = {
   locale: Locale;
@@ -11,6 +15,9 @@ type FooterProps = {
 
 export function Footer({ locale, dict }: FooterProps) {
   const links = getLinks(locale, dict);
+  const pathname = usePathname();
+
+  if (isImmersivePath(pathname)) return null;
 
   const solutionLinks = [
     { href: links.saas, label: dict.footer.saas },
