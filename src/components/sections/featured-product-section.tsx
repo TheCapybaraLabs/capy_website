@@ -1,8 +1,8 @@
 import { Bot, ChevronRight, Database, Lock, MessageSquare, Shield, Sparkles } from "lucide-react";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { CONTACT_EMAIL } from "@/constants/config";
 import type { Dict } from "@/i18n";
 
 const HIGHLIGHT_ICONS = [Shield, Database, Sparkles] as const;
@@ -10,9 +10,10 @@ const PANEL_ICONS = [MessageSquare, Bot, Lock] as const;
 
 type FeaturedProductSectionProps = {
   t: Dict["featured"];
+  labschatHref: string;
 };
 
-export function FeaturedProductSection({ t }: FeaturedProductSectionProps) {
+export function FeaturedProductSection({ t, labschatHref }: FeaturedProductSectionProps) {
   return (
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -40,10 +41,10 @@ export function FeaturedProductSection({ t }: FeaturedProductSectionProps) {
             </div>
 
             <Button size="lg" className="mt-6" asChild>
-              <a href={`mailto:${CONTACT_EMAIL}`}>
+              <Link href={labschatHref}>
                 {t.cta}
                 <ChevronRight className="ml-2 h-4 w-4" />
-              </a>
+              </Link>
             </Button>
           </div>
 

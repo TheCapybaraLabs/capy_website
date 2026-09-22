@@ -30,6 +30,7 @@ export const en: Dict = {
     cases: "Cases",
     about: "About",
     differentials: "Why Us",
+    labschat: "LabsChat.Ai",
     contact: "Get in Touch",
     menuTitle: "Navigation menu",
     toggleMenu: "Open menu",
@@ -353,6 +354,101 @@ export const en: Dict = {
       title: "Ready to Transform Your Organization?",
       body: "Talk to us and find out how our solutions can drive innovation and efficiency in your company",
       button: "Talk to Our Team",
+    },
+  },
+  labschatPage: {
+    meta: {
+      title: "LabsChat.Ai — Enterprise AI Platform",
+      description:
+        "Secure, personalized artificial intelligence, ready for your institution. Multiple models, full white-label, and data hosted in Brazil.",
+      keywords: [
+        "LabsChat.Ai",
+        "enterprise AI platform",
+        "AI chat platform",
+        "white-label AI",
+        "LGPD",
+        "GPT",
+        "Gemini",
+        "Claude",
+        "Capybara Labs",
+      ],
+    },
+    nav: {
+      docs: "Documentation",
+    },
+    hero: {
+      badge: "Enterprise AI Platform",
+      titleLead: "Secure, personalized artificial intelligence.",
+      titleAccent: "Ready for your institution.",
+      subtitle:
+        "LabsChat.Ai brings multiple models, agents and full control into one corporate platform carrying your brand — hosted in Brazil, on your terms.",
+      ctaPrimary: "Talk to the team",
+      ctaSecondary: "See features",
+    },
+    features: {
+      heading: "Everything in one platform",
+      items: [
+        {
+          title: "Multiple models, one place",
+          description:
+            "GPT, Gemini, Claude and more — no switching tools, no paying for separate subscriptions.",
+        },
+        {
+          title: "Full white-label",
+          description:
+            "Your institution's name, logo and identity across the whole platform. Not LabsChat — your Chat.",
+        },
+        {
+          title: "Agents and prompts, built for you",
+          description:
+            "A library of ready-made agents for your team, plus Labs.Prompt, your personal assistant for writing the perfect prompt.",
+        },
+        {
+          title: "Data sovereignty and privacy",
+          description:
+            "Data hosted in Brazil, on a dedicated server per client. No interaction ever trains external models.",
+        },
+      ],
+    },
+    showcase: {
+      heading: "From the login screen to the agents, carrying your brand",
+      subheading:
+        "The screens below belong to live clients — the same platform, each one wearing its own identity.",
+      items: [
+        {
+          eyebrow: "Full white-label",
+          title: "Not LabsChat — your Chat",
+          description:
+            "Your institution's name, logo, colors and artwork across the whole platform, from the login screen onward. People sign in to something they already recognize.",
+          imageAlt: "Chat Grupo Ativa login screen, branded as ativa.ai",
+        },
+        {
+          eyebrow: "Own domain and server",
+          title: "Your address, your server, hosted in Brazil",
+          description:
+            "Every client gets its own subdomain and a dedicated instance. Data stays on Brazilian soil, never mixes across institutions, and never trains external models.",
+          imageAlt: "JA Chat login screen at ja.labschat.ai",
+        },
+        {
+          eyebrow: "Agent marketplace",
+          title: "Your team's agents, all in one place",
+          description:
+            "A library of agents organized by area — HR, Finance, Legal, Education and more — plus Labs.Prompts, the assistant that helps write the perfect prompt.",
+          imageAlt: "LabsChat.Ai agent marketplace, with agents grouped by category",
+        },
+      ],
+    },
+    partners: {
+      heading: "Already running at institutions like",
+    },
+    contactOptions: {
+      email: "Email",
+      whatsapp: "WhatsApp",
+      whatsappMessage: "Hi! I came from the LabsChat.Ai website and I'd like to learn more.",
+    },
+    cta: {
+      body: "Your institution deserves an AI that respects its data, wears its colors, and grows alongside its team.",
+      button: "Talk to the team",
     },
   },
   footer: {

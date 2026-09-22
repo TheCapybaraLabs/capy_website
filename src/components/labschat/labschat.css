@@ -1,0 +1,33 @@
+/**
+ * Paleta isolada da landing /labschat. Deliberadamente não usa os tokens de
+ * --background/--primary/etc. de globals.css: essa página tem identidade
+ * visual própria (monocromática, quase-preto/quase-branco), independente da
+ * marca terrosa do resto do site. Ainda assim respeita o toggle claro/escuro
+ * do site (a classe .dark já é aplicada em <html> pelo ThemeProvider).
+ */
+.labschat-page {
+  --lc-bg: #fafafa;
+  --lc-fg: #0a0a0a;
+  --lc-fg-muted: #8a8a8a;
+  --lc-muted: #6b7280;
+  --lc-border: rgba(0, 0, 0, 0.1);
+  --lc-card: rgba(0, 0, 0, 0.03);
+  --lc-cta-bg: #0a0a0a;
+  --lc-cta-fg: #fafafa;
+  color-scheme: light;
+
+  background-color: var(--lc-bg);
+  color: var(--lc-fg);
+}
+
+.dark .labschat-page {
+  --lc-bg: #030304;
+  --lc-fg: #fafafa;
+  --lc-fg-muted: #6b6b70;
+  --lc-muted: #9ca3af;
+  --lc-border: rgba(255, 255, 255, 0.12);
+  --lc-card: rgba(255, 255, 255, 0.04);
+  --lc-cta-bg: #fafafa;
+  --lc-cta-fg: #0a0a0a;
+  color-scheme: dark;
+}

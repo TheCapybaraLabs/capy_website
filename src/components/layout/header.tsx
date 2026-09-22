@@ -3,6 +3,7 @@
 import { Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,7 @@ import { LanguageSelector } from "@/components/ui/language-selector-dropdown";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { CONTACT_EMAIL, LOGO_IMAGE_PATH } from "@/constants/config";
 import type { Dict, getLinks } from "@/i18n";
+import { isImmersivePath } from "@/lib/immersive-routes";
 
 /**
  * Recebe só as fatias que usa, não o Dict inteiro: este é um client
@@ -22,13 +24,21 @@ type HeaderProps = {
 
 export function Header({ nav, links }: HeaderProps) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   const navItems = [
     { href: links.solutions, label: nav.solutions },
+    { href: links.labschat, label: nav.labschat },
     { href: links.cases, label: nav.cases },
     { href: links.about, label: nav.about },
     { href: links.differentials, label: nav.differentials },
   ];
+
+  /**
+   * A landing do LabsChat.Ai (/labschat) é imersiva e tem sua própria
+   * mini-nav — não faz sentido empilhar o header institucional em cima dela.
+   */
+  if (isImmersivePath(pathname)) return null;
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">

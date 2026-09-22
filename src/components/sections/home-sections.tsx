@@ -21,7 +21,7 @@ export function HomeSections({ locale, dict }: HomeSectionsProps) {
     <>
       <HeroSection t={dict.hero} solutionsHref={links.solutions} />
       <ServicesSection t={dict.services} id={dict.anchors.services} />
-      <FeaturedProductSection t={dict.featured} />
+      <FeaturedProductSection t={dict.featured} labschatHref={links.labschat} />
       <CasesSection t={dict.cases} id={dict.anchors.cases} />
       <Separator />
       <AboutSection t={dict.about} id={dict.anchors.about} />
