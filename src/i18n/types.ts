@@ -86,6 +86,7 @@ export type Dict = {
     badge: string;
     title: string;
     lead: string;
+    missionTitle: string;
     mission: string;
     card: {
       title: string;

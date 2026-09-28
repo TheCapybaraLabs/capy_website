@@ -16,7 +16,11 @@ export function AboutSection({ t, id }: AboutSectionProps) {
             <Badge variant="outline">{t.badge}</Badge>
             <h2 className="font-bold text-3xl md:text-4xl">{t.title}</h2>
             <p className="text-lg text-muted-foreground">{t.lead}</p>
-            <p className="text-muted-foreground">{t.mission}</p>
+
+            <div className="rounded-md border-l-4 border-primary bg-secondary/10 py-3 pr-4 pl-5">
+              <h3 className="font-bold text-secondary-foreground text-lg">{t.missionTitle}</h3>
+              <p className="text-secondary-foreground/80 italic">{t.mission}</p>
+            </div>
           </div>
 
           <Card className="border-2 border-primary/20 bg-primary/5">
