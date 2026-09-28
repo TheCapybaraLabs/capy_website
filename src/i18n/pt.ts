@@ -130,8 +130,8 @@ export const pt: Dict = {
     badge: "Sobre Nós",
     title: "Referência em Tecnologia e IA",
     lead: "Capybara Labs é uma referência no mercado de Tecnologia da Informação, destacando-se pela expertise consolidada em Inteligência Artificial, consultoria e treinamento técnico.",
-    mission:
-      "Nossa missão é transformar a relação das organizações com a tecnologia, promovendo inovação, eficiência e excelência em processos administrativos e operacionais.",
+    missionTitle: "Missão",
+    mission: "Proporcionar o Acesso à Inteligência Artificial de Qualidade para Todos!",
     card: {
       title: "Nosso Diferencial",
       subtitle: "Estrutura operacional e excelência técnica",

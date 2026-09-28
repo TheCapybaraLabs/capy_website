@@ -145,8 +145,8 @@ export const en: Dict = {
     badge: "About Us",
     title: "Built on AI and Engineering Depth",
     lead: "Capybara Labs is an information technology company with consolidated expertise in artificial intelligence, consulting and technical training.",
-    mission:
-      "Our mission is to change how organizations relate to technology, driving innovation, efficiency and excellence across administrative and operational processes.",
+    missionTitle: "Mission",
+    mission: "Providing Access to Quality Artificial Intelligence for Everyone!",
     card: {
       title: "What Sets Us Apart",
       subtitle: "Operational structure and technical depth",
